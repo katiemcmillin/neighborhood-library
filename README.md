@@ -24,15 +24,13 @@ _**Neighborhood Library** is for friends and neighbors to post books they have f
 
 ## MVP
 
-> The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
-
-_The **Neighborhood Library** MVP includes._
+_The **Neighborhood Library** MVP includes full-CRUD (index, show, create, update, delete) on back-end and front-end, three PostgreSQL tables, and responsive design, styled with CSS. It also includes at least eight separate, rendered components, utilizes React Router on the client end._
 
 <br>
 
 ### Goals
 
-- _Lorem ipsum, dolor sit amet,_
+- MVP by Friday, 6/25
 - _consectetur adipiscing elit._
 - _Phasellus dapibus fermentum risus vitae bibendum._
 - _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
@@ -42,15 +40,14 @@ _The **Neighborhood Library** MVP includes._
 
 ### Libraries and Dependencies
 
-> Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
+|      React       | _Base for front-end development._ |
+|   React Router   | _Used for front-end navigation between pages._ |
+|     Ruby on Rails      | _Creates back-end framework._ |
+|    CORS     | _Allows resource sharing with Heroku ._ |
+|  Axios  | _Handles HTTP requests to the server on front-end._ |
 
 <br>
 
@@ -139,19 +136,26 @@ https://github.com/katiemcmillin/neighborhood_library/blob/main/component_hierar
 
 #### Component Architecture
 
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
-
 ``` structure
 
 src
-|__ assets/
-      |__ fonts
-      |__ graphics
-      |__ images
-      |__ mockups
-|__ components/
-      |__ Header.jsx
+|__ containers/
+      |__ MainContainer.jsx
+|__ layouts/
+      |__ Layout.jsx
+      |__ Nav.jsx
+|__ screens/
+      |__ Books.jsx
+      |__ BookCreate.jsx
+      |__ BookDetail.jsx
+      |__ BookEdit.jsx
+      |__ Login.jsx
+      |__ Register.jsx
 |__ services/
+      |__ api-config.js
+      |__ auth.js
+      |__ books.js
+      |__ ratings.js
 
 ```
 
