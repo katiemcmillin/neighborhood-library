@@ -17,14 +17,14 @@
 
 ## Overview
 
-_**Neighborhood Library** is for friends and neighbors to post books they have finished reading and would like to make availble to others. It is like a street library box. It is free to use as long as users follow the guidelines. Users are able to post their book, edit, and delete a book after they check it out. They may also add ratings._
+_**Neighborhood Library** is for friends and neighbors to post books they have finished reading and would like to make available to others. It is just like a street library box. It is free to use as long as users follow the guidelines. Users are able to post a book, edit, and delete a book. They may also add ratings._
 
 
 <br>
 
 ## MVP
 
-_The **Neighborhood Library** MVP includes full-CRUD (index, show, create, update, delete) on back-end and front-end, three PostgreSQL tables, and responsive design, styled with CSS. It also includes at least eight separate, rendered components, utilizes React Router on the client end._
+_The **Neighborhood Library** MVP uses full-CRUD (index, show, create, update, delete) on the back-end and front-end. It includes three PostgreSQL tables, and responsive design, styled with CSS. The site also includes at least eight separate, rendered components, and utilizes React Router on the client end._
 
 <br>
 
