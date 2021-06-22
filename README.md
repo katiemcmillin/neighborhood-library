@@ -17,7 +17,7 @@
 
 ## Overview
 
-_**Neighborhood Library** is for friends and neighbors to post books they have finished reading and would like to make availble to others. It is like a street library box. It is free to use as long as users follow the guidelines. Users are able to create a post their book, edit, and delete a book after they check it out.
+_**Neighborhood Library** is for friends and neighbors to post books they have finished reading and would like to make availble to others. It is like a street library box. It is free to use as long as users follow the guidelines. Users are able to post their book, edit, and delete a book after they check it out. They may also add ratings._
 
 
 <br>
@@ -30,11 +30,8 @@ _The **Neighborhood Library** MVP includes full-CRUD (index, show, create, updat
 
 ### Goals
 
-- MVP by Friday, 6/25
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
+- _Back-end complete by end of Wednesday, 6/23._
+- _MVP by Friday, 6/25_
 
 <br>
 
@@ -165,11 +162,25 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+| Prompt/Project approval    |    H     |     5 hrs      |     6 hrs     |    6 hrs    |
+| Set up database & models    |    H     |     1 hr      |     0 hrs     |    0 hrs    |
+| User authorization    |    L     |     2 hrs      |     0 hrs     |    0 hrs    |
+| Finish routes and controllers   |    H     |     3 hrs      |     0 hrs     |    0 hrs    |
+| Setting up front-end file structure | H | 2hrs| 0hrs | 0hrs |
+| Set up initial CSS | H | 1hr| 0hr | 0hr |
+| Navbar | H | 1hr| 0hr | 0hr |
+| MainContainer.jsx | H | 2hrs| 0hrs | 0hrs |
+| Login | L | 1hr| 0hr | 0hr |
+| Register | L | 1hr| 0hr | 0hr |
+| BooksScreen.jsx  | H | 2hrs| 0hrs | 0hrs |
+| BookDetail.jsx | H | 2hrs| 0hrs | 0hrs |
+| BookCreate.jsx | H | 2hrs| 0hrs | 0hrs |
+| BookEdit.jsx | H | 2hrs| 0hrs | 0hrs |
+| Advanced Styling/CSS | L | 6 hrs| 0hrs | 0hrs |
+| Post MVP | L | 8hrs| N/A | N/A |
 
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
+| TOTAL               |          |     41 hrs      |     6 hrs     |     TBD     |
+
 
 <br>
 
