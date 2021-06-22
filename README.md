@@ -178,8 +178,7 @@ src
 | BookEdit.jsx | H | 2hrs| 0hrs | 0hrs |
 | Advanced Styling/CSS | L | 6 hrs| 0hrs | 0hrs |
 | Post MVP | L | 8hrs| N/A | N/A |
-
-| TOTAL               |          |     41 hrs      |     6 hrs     |     TBD     |
+| Total | H | 41 hrs| 0hrs | 6hrs |
 
 
 <br>
@@ -188,9 +187,7 @@ src
 
 #### ERD Model
 
-> Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
-
-[ERD Sample](https://drive.google.com/file/d/1kLyQTZqfcA4jjKWQexfEkG2UspyclK8Q/view)
+https://github.com/katiemcmillin/neighborhood-library/blob/dev/erd/ERD.png
 <br>
 
 ***
