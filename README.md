@@ -58,37 +58,84 @@ _The **Neighborhood Library** MVP includes._
 
 #### Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
 
-![Dummy Link](url)
+https://github.com/katiemcmillin/neighborhood_library/blob/main/wireframes/Computer%20screen%20-%20Create.png
 
 - Desktop Landing
 
-![Dummy Link](url)
+https://github.com/katiemcmillin/neighborhood_library/blob/main/wireframes/Computer%20screen%20-%20ShowPage.png
 
-- Desktop Hero
+- Desktop Show
 
-![Dummy Link](url)
+https://github.com/katiemcmillin/neighborhood_library/blob/main/wireframes/Computer%20screen%20-%20Edit.png
 
-- Resource Index
+- Desktop Edit
 
-![Dummy Link](url)
+https://github.com/katiemcmillin/neighborhood_library/blob/main/wireframes/Computer%20screen%20-%20Create.png
 
-- Resource Show
+- Desktop Create
 
-![Dummy Link](url)
+https://github.com/katiemcmillin/neighborhood_library/blob/main/wireframes/Computer%20screen%20-%20Register.png
 
-- Tablet Resource Index
+- Desktop Register
 
-![Dummy Link](url)
+https://github.com/katiemcmillin/neighborhood_library/blob/main/wireframes/Computer%20screen%20-%20LogIn.png
 
-- Mobile Resource Index
+- Desktop Login
+
+https://github.com/katiemcmillin/neighborhood_library/blob/main/wireframes/Tablet%20-%20Homepage.png
+
+- Tablet Landing
+
+https://github.com/katiemcmillin/neighborhood_library/blob/main/wireframes/Tablet%20-%20Showpage.png
+
+- Tablet Show
+
+https://github.com/katiemcmillin/neighborhood_library/blob/main/wireframes/Tablet%20-%20Edit.png
+
+- Tablet Edit
+
+https://github.com/katiemcmillin/neighborhood_library/blob/main/wireframes/Tablet%20-%20Create.png
+
+- Tablet Create
+
+https://github.com/katiemcmillin/neighborhood_library/blob/main/wireframes/Tablet%20-%20Register.png
+
+- Tablet Register
+
+https://github.com/katiemcmillin/neighborhood_library/blob/main/wireframes/Tablet%20-%20Login.png
+
+- Tablet Login
+
+https://github.com/katiemcmillin/neighborhood_library/blob/main/wireframes/iPhone%206%2C%207%2C%208%20Plus%20%E2%80%93%20Homepage.png
+
+- Mobile Landing
+
+https://github.com/katiemcmillin/neighborhood_library/blob/main/wireframes/iPhone%206%2C%207%2C%208%20Plus%20%E2%80%93%20Showpage.png
+
+- Mobile Show
+
+https://github.com/katiemcmillin/neighborhood_library/blob/main/wireframes/iPhone%206%2C%207%2C%208%20Plus%20%E2%80%93%20Edit.png
+
+- Mobile Edit
+
+https://github.com/katiemcmillin/neighborhood_library/blob/main/wireframes/iPhone%206%2C%207%2C%208%20Plus%20%E2%80%93%20Create.png
+
+- Mobile Create
+
+https://github.com/katiemcmillin/neighborhood_library/blob/main/wireframes/iPhone%206%2C%207%2C%208%20Plus%20%E2%80%93%20Register.png
+
+- Mobile Register
+
+https://github.com/katiemcmillin/neighborhood_library/blob/main/wireframes/iPhone%206%2C%207%2C%208%20Plus%20%E2%80%93%20Login.png
+
+- Mobile Login
+
+
 
 #### Component Tree
 
-
-
-[Component Tree Sample](https://gist.git.generalassemb.ly/davidtwhitlatch/414107e2560ae0bb65e233570f2fe056#file-component-tree-png)
+https://github.com/katiemcmillin/neighborhood_library/blob/main/component_hierarchy/Component%20hierarchy.png
 
 #### Component Architecture
 
@@ -135,7 +182,8 @@ src
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+Authorization for Users
+Book reviews
 
 ***
 
