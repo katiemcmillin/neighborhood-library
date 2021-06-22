@@ -167,11 +167,11 @@ src
 | User authorization    |    L     |     2 hrs      |     0 hrs     |    0 hrs    |
 | Finish routes and controllers   |    H     |     3 hrs      |     0 hrs     |    0 hrs    |
 | Setting up front-end file structure | H | 2hrs| 0hrs | 0hrs |
-| Set up initial CSS | H | 1hr| 0hr | 0hr |
-| Navbar | H | 1hr| 0hr | 0hr |
+| Set up initial CSS | H | 1hr| 0hrs | 0hrs |
+| Navbar | H | 1hr| 0hrs | 0hrs |
 | MainContainer.jsx | H | 2hrs| 0hrs | 0hrs |
-| Login | L | 1hr| 0hr | 0hr |
-| Register | L | 1hr| 0hr | 0hr |
+| Login | L | 1hr| 0hrs | 0hrs |
+| Register | L | 1hr| 0hrs | 0hrs |
 | BooksScreen.jsx  | H | 2hrs| 0hrs | 0hrs |
 | BookDetail.jsx | H | 2hrs| 0hrs | 0hrs |
 | BookCreate.jsx | H | 2hrs| 0hrs | 0hrs |
