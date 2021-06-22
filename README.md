@@ -194,8 +194,8 @@ https://github.com/katiemcmillin/neighborhood-library/blob/dev/erd/ERD.png
 
 ## Post-MVP
 
-Authorization for Users
-Book reviews
+- Authorization for Users
+- Book reviews
 
 ***
 
