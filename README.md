@@ -177,7 +177,7 @@ src
 | BookCreate.jsx | H | 2hrs| 0hrs | 0hrs |
 | BookEdit.jsx | H | 2hrs| 0hrs | 0hrs |
 | Advanced Styling/CSS | L | 6 hrs| 0hrs | 0hrs |
-| Post MVP | L | 8hrs| N/A | N/A |
+| Post MVP | L | 8hrs| 0hrs | 0hrs |
 | Total | H | 41 hrs| 0hrs | 6hrs |
 
 
