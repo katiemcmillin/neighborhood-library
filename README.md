@@ -53,7 +53,7 @@ _The **Neighborhood Library** MVP uses full-CRUD (index, show, create, update, d
 #### Wireframes
 
 
-https://github.com/katiemcmillin/neighborhood-library/blob/main/wireframes/Computer%20screen%20-%20Create.png
+https://github.com/katiemcmillin/neighborhood-library/blob/dev/wireframes/Computer%20screen%20-%20Homepage.png
 
 - Desktop Landing
 
