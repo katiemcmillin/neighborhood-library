@@ -1,5 +1,6 @@
 class RatingsController < ApplicationController
   before_action :set_rating, only: [:show, :update, :destroy]
+  before_action :authorize_request, except: [:index, :show]
 
   # GET /ratings
   def index
@@ -16,6 +17,7 @@ class RatingsController < ApplicationController
   # POST /ratings
   def create
     @rating = Rating.new(rating_params)
+    @rating.user = @current_user
 
     if @rating.save
       render json: @rating, status: :created
@@ -24,19 +26,7 @@ class RatingsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /ratings/1
-  def update
-    if @rating.update(rating_params)
-      render json: @rating
-    else
-      render json: @rating.errors, status: :unprocessable_entity
-    end
-  end
 
-  # DELETE /ratings/1
-  def destroy
-    @rating.destroy
-  end
 
   private
     # Use callbacks to share common setup or constraints between actions.
@@ -46,6 +36,6 @@ class RatingsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def rating_params
-      params.require(:rating).permit(:rating, :book_id, :user_id)
+      params.permit(:rating, :book_id)
     end
 end
