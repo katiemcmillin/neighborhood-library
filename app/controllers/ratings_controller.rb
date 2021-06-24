@@ -36,6 +36,6 @@ class RatingsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def rating_params
-      params.permit(:rating, :book_id)
+      params.require(:rating).permit(:number_of_stars, :book_id)
     end
 end
