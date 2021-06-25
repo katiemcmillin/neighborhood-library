@@ -28,6 +28,7 @@ const BookDetail = (props) => {
     return <h1>Loading...</h1>;
   }
   return (
+
     <div className="book-detail">
       <div>
       <img
