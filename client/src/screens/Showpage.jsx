@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import Layout from "../layouts/Layout";
 import { getOneBook, deleteBook, getAllBooks } from "../services/books";
 import { useParams, Link, useHistory } from "react-router-dom";
 

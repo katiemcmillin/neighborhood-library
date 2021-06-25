@@ -1,4 +1,4 @@
-import { Link, Route, useParams } from "react-router-dom"
+import { Link} from "react-router-dom"
 
 function Books(props) {
   const {books } = props
