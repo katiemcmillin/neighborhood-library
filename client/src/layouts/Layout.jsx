@@ -1,6 +1,5 @@
 import Nav from '../components/Nav/Nav'
 
-import {Link} from "react-router-dom"
 const Layout = (props) => {
   const { currentUser, children, handleLogout } = props
   return  (<div className='layout'>

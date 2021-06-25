@@ -5,6 +5,7 @@ import { AZ, ZA, lowestFirst, highestFirst } from "../utils/sort";
 import Books from "../screens/Books";
 import Search from "../components/Search/Search";
 import Sort from "../components/Sort/Sort";
+import Showpage from "../screens/Showpage";
 
 function MainContainer() {
   const [books, setBooks] = useState([]);
@@ -49,8 +50,8 @@ function MainContainer() {
   }
 
   const handleSearch = (event) => {
-    const results = books.filter((product) =>
-      product.name.toLowerCase().includes(event.target.value.toLowerCase())
+    const results = books.filter((book) =>
+      book.title.toLowerCase().includes(event.target.value.toLowerCase())
     );
     setSearchResult(results);
     setApplySort(true);
@@ -59,6 +60,9 @@ function MainContainer() {
   return (
     <div>
       <Switch>
+        <Route path="/books/:id">
+          <Showpage />
+        </Route>
         <Route path="/">
           <Search onSubmit={handleSubmit} handleSearch={handleSearch} />
           <Sort onSubmit={handleSubmit} handleSort={handleSort} />
