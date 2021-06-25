@@ -8,7 +8,7 @@ import Sort from "../components/Sort/Sort";
 import BookDetail from "../screens/BookDetail";
 import BookCreate from "../screens/BookCreate";
 
-function MainContainer() {
+function MainContainer(props) {
   const [books, setBooks] = useState([]);
   const [searchResult, setSearchResult] = useState([]);
   const [applySort, setApplySort] = useState(false);
@@ -65,7 +65,7 @@ function MainContainer() {
           <BookCreate />
           </Route>
         <Route path="/books/:id">
-          <BookDetail />
+          <BookDetail currentUser={props.currentUser }/>
         </Route>
         <Route path="/">
           <Search onSubmit={handleSubmit} handleSearch={handleSearch} />

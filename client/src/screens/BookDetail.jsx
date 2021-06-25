@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { getOneBook, deleteBook, getAllBooks } from "../services/books";
 import { useParams, Link, useHistory } from "react-router-dom";
 
+
 const BookDetail = (props) => {
   const [book, setBook] = useState(null);
   const [isLoaded, setLoaded] = useState(false);
@@ -41,15 +42,15 @@ const BookDetail = (props) => {
         <div><span>Description:</span><span>{book.description}</span></div>
 
         </div>
-      <div className="button-container">
+      {props.currentUser && (<div className="button-container">
         <Link className="edit-button" to={`/books/${book.id}/edit`}>
           Edit
         </Link>
         <button className="delete-button" onClick={handleClick}>
           Delete
         </button>
+      </div>)}
       </div>
-    </div>
   );
 };
 
