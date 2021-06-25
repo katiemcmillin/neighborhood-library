@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { getOneBook, deleteBook, getAllBooks } from "../services/books";
 import { useParams, Link, useHistory } from "react-router-dom";
 
-const Showpage = (props) => {
+const BookDetail = (props) => {
   const [book, setBook] = useState(null);
   const [isLoaded, setLoaded] = useState(false);
   const { id } = useParams();
@@ -53,4 +53,4 @@ const Showpage = (props) => {
   );
 };
 
-export default Showpage;
+export default BookDetail;

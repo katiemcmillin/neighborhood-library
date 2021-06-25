@@ -5,7 +5,8 @@ import { AZ, ZA, lowestFirst, highestFirst } from "../utils/sort";
 import Books from "../screens/Books";
 import Search from "../components/Search/Search";
 import Sort from "../components/Sort/Sort";
-import Showpage from "../screens/Showpage";
+import BookDetail from "../screens/BookDetail";
+import BookCreate from "../screens/BookCreate";
 
 function MainContainer() {
   const [books, setBooks] = useState([]);
@@ -60,8 +61,11 @@ function MainContainer() {
   return (
     <div>
       <Switch>
+      <Route path="/books/add">
+          <BookCreate />
+          </Route>
         <Route path="/books/:id">
-          <Showpage />
+          <BookDetail />
         </Route>
         <Route path="/">
           <Search onSubmit={handleSubmit} handleSearch={handleSearch} />

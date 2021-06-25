@@ -10,7 +10,7 @@ function Nav(props) {
         <img src={logo} alt="Neighborhood Library" />
       </Link>
       {currentUser && (
-        <Link>
+        <Link to='/books/add'>
           <p>Add Book</p>
         </Link>
       )}
