@@ -6,7 +6,6 @@ const Showpage = (props) => {
   const [book, setBook] = useState(null);
   const [isLoaded, setLoaded] = useState(false);
   const { id } = useParams();
-
   let history = useHistory();
 
   const handleClick = () => {
@@ -28,12 +27,20 @@ const Showpage = (props) => {
     return <h1>Loading...</h1>;
   }
   return (
-    <div className="product-detail">
+    <div className="book-detail">
+      <div>
       <img
-        className="product-detail-image"
+        className="book-detail-image"
         src={book.img_url}
         alt={book.title}
-      />
+        />
+        </div>
+      <div>
+        <div><span>Title:</span><span>{book.title}</span></div>
+        <div><span>Author:</span><span>{book.author}</span></div>
+        <div><span>Description:</span><span>{book.description}</span></div>
+
+        </div>
       <div className="button-container">
         <Link className="edit-button" to={`/books/${book.id}/edit`}>
           Edit
