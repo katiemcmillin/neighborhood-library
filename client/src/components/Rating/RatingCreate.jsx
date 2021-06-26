@@ -1,39 +1,35 @@
-// https://www.npmjs.com/package/react-rating-stars-component
-import ReactStars from "react-rating-stars-component";
+// https://www.youtube.com/watch?v=eDw46GYAIDQ
+import { FaStar } from "react-icons/fa";
 import { useState } from "react";
-import { postRating } from "../../services/ratings";
+import "./RatingCreate.css";
 
 function RatingCreate(props) {
-  const [rating, setRating] = useState({
-    number_of_stars: Number(''),
-    book_id: props.book.id
-  });
+  const [rating, setRating] = useState(null);
+  const [hover, setHover] = useState(null);
 
-  const [isCreated, setCreated] = useState(false);
-
-  const handleChange = (value) => {
-    setRating({
-      ['number_of_stars']: value,
-    });
-
-  }
-    const handleSubmit = async (event) => {
-      event.preventDefault();
-      const created = await postRating(rating);
-      setCreated({ created });
-    };
-  
-    return (
-      <form onSubmit={handleSubmit}>
-        <ReactStars
-          value={rating.number_of_stars}
-          count={5}
-          onChange={handleChange}
-          size={24}
-          activeColor="#ffd700"
-        />
-        <button>Add Rating</button>
-      </form>
-    );
-  }
+  return (
+    <div className="rating-container">
+      {[...Array(5)].map((star, index) => {
+        const ratingValue = index + 1;
+        return (
+          <label key={index}>
+            <input
+              type="radio"
+              name="number_of_stars"
+              value={ratingValue}
+              onClick={() => setRating(ratingValue)}
+            />
+            <FaStar
+              className="star"
+              onMouseEnter={() => setHover(ratingValue)}
+              onMouseLeave={() => setHover(null)}
+              color={ratingValue <= (hover || rating) ? "#ffc107" : "#e4e5e9"}
+              size={30}
+            />
+          </label>
+        );
+      })}
+    </div>
+  );
+}
 export default RatingCreate;

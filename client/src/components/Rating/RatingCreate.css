@@ -1,0 +1,18 @@
+.rating-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="radio"] {
+  display: none;
+}
+.star {
+  cursor: pointer;
+  transition: color 200ms;
+}
+
+/*
+yellow: #ffc107
+gray: #e4e5e9
+*/
