@@ -1,9 +1,9 @@
 import {useState, useEffect} from "react"
 import Search from "../components/Search/Search";
 import { getAllBooks } from "../services/books";
-import Book from "../components/Book";
+import Book from "../components/Book/Book";
 
-function Books(props) {
+function Books() {
   const [searchResult, setSearchResult] = useState([]);
   const [books, setBooks] = useState([]);
   useEffect(() => {
@@ -37,15 +37,7 @@ function Books(props) {
             />
           )
         })}
-      </div>
-     {/* <Search onSubmit={handleSubmit} handleSearch={handleSearch} />
-      <Sort onSubmit={handleSubmit} handleSort={handleSort} />
-    {books && books.map((book) => (
-      <Link key={book.id} to={`/books/${book.id}`}>
-        <img src={book.img_url} alt={book.title} />
-      </Link>
-    ))} */}
-    
+      </div> 
   </div>)
 }
 export default Books

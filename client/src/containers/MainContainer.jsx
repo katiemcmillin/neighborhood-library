@@ -2,6 +2,7 @@ import { Switch, Route } from "react-router-dom";
 import Books from "../screens/Books";
 import BookDetail from "../screens/BookDetail";
 import BookCreate from "../screens/BookCreate";
+import BookEdit from "../screens/BookEdit";
 
 function MainContainer(props) {
 
@@ -9,6 +10,9 @@ function MainContainer(props) {
   return (
     <div>
       <Switch>
+      <Route path="/books/:id/edit">
+          <BookEdit currentUser={props.currentUser}/>
+        </Route>
       <Route path="/books/add">
           <BookCreate />
           </Route>

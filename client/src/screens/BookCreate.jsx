@@ -44,9 +44,10 @@ const BookCreate = (props) => {
         onChange={handleChange} />
     </label>
     <label>Description:
-      <input
-        type='textarea'
-        rows='10'
+      <textarea
+        type='text'
+        rows={10}
+        cols={78}
         name='description'
         value={book.description}
         onChange={handleChange} />
