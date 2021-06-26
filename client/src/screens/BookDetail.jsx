@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { getOneBook, deleteBook, getAllBooks } from "../services/books";
 import { useParams, Link, useHistory } from "react-router-dom";
+import Rating from "../components/Rating/RatingCreate"
 
 
 const BookDetail = (props) => {
@@ -41,6 +42,7 @@ const BookDetail = (props) => {
         <div><span>Title:</span><span>{book.title}</span></div>
         <div><span>Author:</span><span>{book.author}</span></div>
         <div><span>Description:</span><span>{book.description}</span></div>
+        <div><span>Rating Average:</span><span><Rating book={book}/></span></div>
 
         </div>
       {props.currentUser && (<div className="button-container">

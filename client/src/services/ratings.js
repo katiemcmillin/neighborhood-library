@@ -10,7 +10,7 @@ export const getOneRating = async (id) => {
   return resp.data
 }
 
-export const postRating = async ratingData => {
+export const postRating = async (ratingData) => {
   const resp = await api.post('/ratings', { rating: ratingData })
   return resp.data
 }

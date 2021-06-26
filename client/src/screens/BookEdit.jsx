@@ -84,15 +84,6 @@ const BookEdit = (props) => {
             onChange={handleChange}
           />
         </label>
-        <label>
-          Image Link:
-          <input
-            type="text"
-            name="img_url"
-            value={book.img_url}
-            onChange={handleChange}
-          />
-        </label>
         <button type="submit" className="save-button">
           Save
         </button>
