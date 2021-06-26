@@ -42,7 +42,7 @@ const BookDetail = (props) => {
         <div><span>Title:</span><span>{book.title}</span></div>
         <div><span>Author:</span><span>{book.author}</span></div>
         <div><span>Description:</span><span>{book.description}</span></div>
-        <div><span>Rating Average:</span><span><Rating book={book}/></span></div>
+        <div><span>Rating Average:</span><span><Rating currentUser={props.currentUser }book={book}/></span></div>
 
         </div>
       {props.currentUser && (<div className="button-container">
