@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { getOneBook, deleteBook, getAllBooks } from "../services/books";
 import { useParams, Link, useHistory } from "react-router-dom";
-import Rating from "../components/Rating/RatingCreate.jsx"
+import Rating from "../components/RatingCreate/RatingCreate.jsx"
 
 
 const BookDetail = (props) => {
