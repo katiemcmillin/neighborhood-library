@@ -13943,3 +13943,45 @@ Processing by BooksController#show as HTML
 Completed 200 OK in 10ms (Views: 5.8ms | ActiveRecord: 1.2ms | Allocations: 2125)
 
 
+Started GET "/auth/verify" for ::1 at 2021-06-28 15:34:54 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 726)
+
+
+Started GET "/books" for ::1 at 2021-06-28 15:38:43 -0400
+Started GET "/auth/verify" for ::1 at 2021-06-28 15:38:43 -0400
+Processing by BooksController#index as HTML
+Processing by AuthenticationController#verify as HTML
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.7ms | Allocations: 1404)
+
+
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 28ms (Views: 0.4ms | ActiveRecord: 11.7ms | Allocations: 3961)
+
+
+Started POST "/users/" for ::1 at 2021-06-28 15:39:22 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"NewUser", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mUser Exists? (1.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "NewUser"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mUser Create (3.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "NewUser"], ["password_digest", "$2a$12$IekfS.NswHD09PJVdGQ2COvdHlRnKe7BmkDDX751IiMp04xRv6Gle"], ["created_at", "2021-06-28 19:39:22.709934"], ["updated_at", "2021-06-28 19:39:22.709934"]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+Completed 201 Created in 305ms (Views: 0.1ms | ActiveRecord: 6.2ms | Allocations: 3206)
+
+
+Started GET "/books" for ::1 at 2021-06-28 15:39:22 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.6ms | Allocations: 1003)
+
+
