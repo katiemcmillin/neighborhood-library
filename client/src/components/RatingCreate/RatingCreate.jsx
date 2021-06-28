@@ -1,87 +1,17 @@
-// https://www.youtube.com/watch?v=eDw46GYAIDQ
-import { FaStar } from "react-icons/fa";
-import { useState, useEffect } from "react";
-import "./RatingCreate.css";
-// import Book from "../Book/Book";
-import { postRating } from "../../services/ratings";
+import Ratings from "react-ratings-declarative";
 
-function RatingCreate(props) {
-  const [ratings, setRatings] = useState([]);
-  const [rating, setRating] = useState({
-    number_of_stars: Number(""),
-    book_id: props.book.id,
-  });
-  
-  
-  const [hover, setHover] = useState(null);
-
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-    setRating({
-      ...rating,
-      [name]: value,
-    });
-  };
-
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    let created = false;
-    ratings.forEach((rating) => {
-      if (
-        rating.user_id === props.currentUser.id &&
-        rating.book_id === rating.book_id
-      ) {
-        console.log(
-          rating.user_id,
-          props.currentUser.id,
-          rating.book_id,
-          rating.book_id
-        );
-        created = true;
-        setRating({ number_of_stars: rating.number_of_stars });
-      }
-    });
-    if (!created) {
-      const newRating = await postRating(rating);
-      console.log(newRating);
-    }
-  };
-  // let ratingValue = null;
-  // let userRating = null;
-  // ratings.forEach((rating) => {
-
-  //   if (rating.user_id === props.currentUser.id && rating.book_id === rating.book_id) {
-  //     rating = userRating
-  //     return true
-  //   }
-  // });
-
+export default function RatingCreate(props) {
+  const { userRating, handleCreateRating } = props;
   return (
-    <div className="rating-container">
-      <form onSubmit={handleSubmit}>
-        {[...Array(5)].map((star, index) => {
-          const ratingValue = index + 1;
-          return (
-            <label key={index}>
-              <input
-                type="radio"
-                name="number_of_stars"
-                value={ratingValue}
-                onClick={handleChange}
-              />
-              <FaStar
-                className="star"
-                onMouseEnter={() => setHover(ratingValue)}
-                onMouseLeave={() => setHover(null)}
-                color={ratingValue <= (hover || rating) ? "#ffc107" : "#e4e5e9"}
-                size={30}
-              />
-            </label>
-          );
-        })}
-        <button type="submit">Save</button>
-      </form>
-    </div>
+    <Ratings
+      changeRating={handleCreateRating}
+      rating={userRating?.number_of_stars || 0}
+    >
+      <Ratings.Widget />
+      <Ratings.Widget />
+      <Ratings.Widget />
+      <Ratings.Widget />
+      <Ratings.Widget />
+    </Ratings>
   );
 }
-export default RatingCreate;
