@@ -5,6 +5,7 @@
   padding-top: 80px;
   align-items: flex-start;
   border: 2px solid black;
+  box-sizing: border-box;
 }
 span {
   color: #845ec2;
