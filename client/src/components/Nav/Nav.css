@@ -56,6 +56,9 @@ nav {
   font-size: 30px;
   font-weight: 450;
 }
+p {
+  font-size: 30px;
+}
 p.link-welcome {
   width: 200px;
 }

@@ -25,6 +25,7 @@ span {
 }
 .detail-label {
   text-align: left;
+  margin-right: 5px;
 }
 .detail {
   display: flex;
