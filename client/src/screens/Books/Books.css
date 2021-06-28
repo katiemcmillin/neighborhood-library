@@ -3,18 +3,18 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 40px;
-  height: 600vh;
 }
 
-.book-div {
+/* .book-div {
   padding: 0px 20px;
-}
+} */
 
 .sort-container {
   display: flex;
   width: 83.5vw;
   justify-content: flex-end;
   margin: 20px;
+  height: auto;
 }
 
 select {
@@ -33,11 +33,9 @@ h3 {
 @media (max-width: 500px) {
   .books {
     width: 100%;
-    justify-content: space-around;
   }
   .sort-container {
     width: 100%;
-    justify-content: center;
     margin: 0px;
   }
   h3 {
