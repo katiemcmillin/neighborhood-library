@@ -1,38 +1,29 @@
 //https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_responsive_form/
 import { useState } from "react";
-import { postBook, getAllBooks } from "../../services/books";
-import { Redirect } from "react-router-dom";
 import "./BookCreate.css";
 const BookCreate = (props) => {
+  const {handleCreate } = props
   const [book, setBook] = useState({
     title: "",
     author: "",
     description: "",
     img_url: "",
   });
-  const [isCreated, setCreated] = useState(false);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    setBook({
-      ...book,
+    setBook((prevState) => ({
+      ...prevState,
       [name]: value,
-    });
+    }));
   };
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    const created = await postBook(book);
-    setCreated({ created });
-    getAllBooks();
-  };
-
-  if (isCreated) {
-    return <Redirect to="/" />;
-  }
   return (
     <div className="container">
-      <form onSubmit={handleSubmit} action="action_page.php">
+      <form onSubmit={(e) => {
+        e.preventDefault();
+        handleCreate(book);
+      }} action="action_page.php">
         <div className="row">
           <div className="col-25">
             <label htmlFor="fname">Title:</label>

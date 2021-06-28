@@ -11,11 +11,8 @@ const BookDetail = (props) => {
   const [isLoaded, setLoaded] = useState(false);
   const { id } = useParams();
   let history = useHistory();
-  const { currentUser } = props;
-  const handleClick = () => {
-    deleteBook(book.id);
-    history.push("/");   
-  };
+  const { currentUser, handleDelete } = props;
+  
 
 
   useEffect(() => {
@@ -79,7 +76,7 @@ const BookDetail = (props) => {
             <Link className="edit-button" to={`/books/${id}/edit`}>
               Edit
             </Link>
-            <button className="delete-button" onClick={handleClick}>
+            <button className="delete-button" onClick={() => handleDelete(id)}>
               Delete
             </button>
           </div>

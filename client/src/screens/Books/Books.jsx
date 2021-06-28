@@ -1,21 +1,14 @@
 import {useState, useEffect} from "react"
 import Search from "../../components/Search/Search";
-import { getAllBooks } from "../../services/books";
 import Book from "../../components/Book/Book";
 import "./Books.css"
 
-function Books() {
-  const [searchResult, setSearchResult] = useState([]);
-  const [books, setBooks] = useState([]);
+function Books(props) {
+  const [searchResult, setSearchResult] = useState([]); 
+  const { books } = props
   useEffect(() => {
-    const fetchBooks = async () => {
-      const booksData = await getAllBooks();
-      setBooks(booksData);
-      setSearchResult(booksData);
-    };
-    fetchBooks();
-  }, []);
-
+    setSearchResult(books)
+  }, [books])
   const handleSearch = (event) => {
     const results = books.filter((book) =>
       (book.title).toLowerCase().includes(event.target.value.toLowerCase())

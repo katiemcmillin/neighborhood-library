@@ -1,21 +1,41 @@
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, useHistory } from "react-router-dom";
 import Books from "../screens/Books/Books";
 import BookDetail from "../screens/BookDetail/BookDetail";
 import BookCreate from "../screens/BookCreate/BookCreate";
 import BookEdit from "../screens/BookEdit/BookEdit";
-import { getAllRatings } from "../services/ratings";
-import {useState, useEffect } from "react"
+import { getAllBooks, deleteBook, postBook } from "../services/books"
+import { useState, useEffect } from "react"
 
 function MainContainer(props) {
-  const [ratings, setRatings] = useState(null);
+  const [books, setBooks] = useState([]);
+  const history = useHistory();
+
   useEffect(() => {
-    const fetchRatings = async () => {
-      const ratingsData = await getAllRatings();
-      setRatings(ratingsData);
+    const fetchBooks = async () => {
+      const booksData = await getAllBooks();
+      setBooks(booksData);
     };
-    fetchRatings();
+    fetchBooks();
   }, []);
-  
+
+  const handleDelete = async (id) => {
+    await deleteBook(id)
+    setBooks((prevState) => {
+      return prevState.filter((book) => {
+        return book.id !== Number(id)
+      })
+    })
+    history.push('/')
+  }
+
+  const handleCreate = async (formData) => {
+    const created = await postBook(formData);
+    setBooks((prevState) => {
+      return [...prevState, created]
+    })
+    history.push('/')
+  };
+
   return (
     <div>
       <Switch>
@@ -23,13 +43,13 @@ function MainContainer(props) {
           <BookEdit currentUser={props.currentUser}/>
         </Route>
       <Route path="/books/add">
-          <BookCreate />
+          <BookCreate handleCreate={handleCreate }/>
           </Route>
         <Route path="/books/:id">
-          <BookDetail ratings={ratings} currentUser={props.currentUser}/>
+          <BookDetail handleDelete={handleDelete } currentUser={props.currentUser}/>
         </Route>
         <Route path="/">
-         <Books/>
+          <Books books={books}/>
         </Route>
       </Switch>
     </div>
