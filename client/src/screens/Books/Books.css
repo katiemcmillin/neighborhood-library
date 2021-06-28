@@ -29,6 +29,7 @@ select {
 h3 {
   text-align: center;
   font-size: 30px;
+  text-shadow: .5px .5px #7b57b5;
 }
 @media (max-width: 500px) {
   .books {
