@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { getOneBook, deleteBook, getAllBooks } from "../../services/books";
 import { useParams, Link, useHistory } from "react-router-dom";
-import Rating from "../../components/RatingCreate/RatingCreate.jsx";
+import RatingCreate from "../../components/RatingCreate/RatingCreate.jsx";
 import './BookDetail.css'
 
 const BookDetail = (props) => {
@@ -9,7 +9,7 @@ const BookDetail = (props) => {
   const [isLoaded, setLoaded] = useState(false);
   const { id } = useParams();
   let history = useHistory();
-
+  const {ratings } = props
   const handleClick = () => {
     deleteBook(book.id);
     getAllBooks();
@@ -32,7 +32,7 @@ const BookDetail = (props) => {
     <div className="book-detail">
       <img className="book-detail-image" src={book.img_url} alt={book.title} />
       <div className="detail">
-        <div classname="label-container">
+        <div className="label-container">
           <span className="detail-label">Title:</span>
           <span>{book.title}</span>
         </div>
@@ -46,8 +46,9 @@ const BookDetail = (props) => {
         </div>
         <div>
           <span className="detail-label">Rating Average:</span>
-          <div>
-            <Rating currentUser={props.currentUser} book={book} />
+          <div>{
+            // <Rating/>
+            <RatingCreate currentUser={props.currentUser} book={book} />}
           </div>
         </div>
 

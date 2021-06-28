@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 const Book = (props) => {
+  
   return (
     <div className='book-div'>
       <Link className='book' to={`/books/${props.id}`}>

@@ -3,7 +3,7 @@ import { FaStar } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import "./RatingCreate.css";
 // import Book from "../Book/Book";
-import { getAllRatings, postRating } from "../../services/ratings";
+import { postRating } from "../../services/ratings";
 
 function RatingCreate(props) {
   const [ratings, setRatings] = useState([]);
@@ -11,14 +11,8 @@ function RatingCreate(props) {
     number_of_stars: Number(""),
     book_id: props.book.id,
   });
-  useEffect(() => {
-    const fetchRatings = async () => {
-      const ratingsData = await getAllRatings();
-      setRatings(ratingsData);
-    };
-    fetchRatings();
-  }, []);
-
+  
+  
   const [hover, setHover] = useState(null);
 
   const handleChange = (event) => {
