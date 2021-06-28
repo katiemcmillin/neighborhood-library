@@ -14,9 +14,9 @@ const BookDetail = (props) => {
   const { currentUser } = props;
   const handleClick = () => {
     deleteBook(book.id);
-    getAllBooks();
-    history.push("/");
+    history.push("/");   
   };
+
 
   useEffect(() => {
     const fetchBook = async () => {
@@ -76,7 +76,7 @@ const BookDetail = (props) => {
 
         {currentUser && (
           <div className="button-container">
-            <Link className="edit-button" to={`/books/${book.id}/edit`}>
+            <Link className="edit-button" to={`/books/${id}/edit`}>
               Edit
             </Link>
             <button className="delete-button" onClick={handleClick}>
