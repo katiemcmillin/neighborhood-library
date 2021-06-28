@@ -10,12 +10,11 @@
 span {
   color: #845ec2;
 }
-.label-container{
-display: flex;
-
+.label-container {
+  display: flex;
 }
 .detail-label {
-text-align: left;
+  text-align: left;
 }
 .detail {
   display: flex;
@@ -36,9 +35,6 @@ text-align: left;
 .name {
   letter-spacing: 1px;
 }
-
-
-
 
 .description {
   letter-spacing: 0.9px;
@@ -92,40 +88,40 @@ text-align: left;
 
 .edit-link {
   color: white;
-
 }
 @media (max-width: 1024px) {
   .name {
-      font-size: 32px;
+    font-size: 32px;
   }
   .book-detail-image {
-      width: 500px;
-      margin-top: -100px;
-      padding: 10px;
+    width: 500px;
+    margin-top: -100px;
+    padding: 10px;
   }
   .book-detail {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 @media (max-width: 800px) {
   .book-detail-image {
-      width: 300px;
-      margin: 15px;
-      padding: 10px;
+    width: 300px;
+    margin: 15px;
+    padding: 10px;
   }
   .book-detail {
-      padding: 0px;
-      padding-top: 120px;
+    padding: 0px;
+    padding-top: 120px;
   }
   .button-container {
-      padding: 20px;
-      padding-bottom: 80px;
+    padding: 20px;
+    padding-bottom: 80px;
   }
-  .edit-button, .delete-button {
-      width: 40%;
+  .edit-button,
+  .delete-button {
+    width: 40%;
   }
 }

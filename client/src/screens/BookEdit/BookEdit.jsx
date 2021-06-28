@@ -49,10 +49,13 @@ const BookEdit = (props) => {
           />
         </form>
       </div>
-      <form className="edit-form" onSubmit={(e) => {
-            e.preventDefault();
-            handleEdit(id, book);
-          }}>
+      <form
+        className="edit-form"
+        onSubmit={(e) => {
+          e.preventDefault();
+          handleEdit(id, book);
+        }}
+      >
         <label>
           Title:
           <input

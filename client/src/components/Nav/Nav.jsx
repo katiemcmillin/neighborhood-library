@@ -11,13 +11,11 @@ function Nav(props) {
           <Link to="/">
             <img src={logo} alt="Neighborhood Library" />
           </Link>
-        {currentUser && (
-          // <div id="add-book-div">
+          {currentUser && (
             <Link id="add-book-link" className="link" to="/books/add">
               <p>Add Book</p>
             </Link>
-          //</div>
-        )}
+          )}
         </div>
         <div className="link-div">
           {currentUser ? (

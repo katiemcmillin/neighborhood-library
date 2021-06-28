@@ -50,7 +50,7 @@ function MainContainer(props) {
     <div>
       <Switch>
         <Route path="/books/:id/edit">
-          <BookEdit handleEdit={handleEdit } currentUser={props.currentUser} />
+          <BookEdit handleEdit={handleEdit} currentUser={props.currentUser} />
         </Route>
         <Route path="/books/add">
           <BookCreate handleCreate={handleCreate} />

@@ -2,7 +2,7 @@
 import { useState } from "react";
 import "./BookCreate.css";
 const BookCreate = (props) => {
-  const {handleCreate } = props
+  const { handleCreate } = props;
   const [book, setBook] = useState({
     title: "",
     author: "",
@@ -20,10 +20,13 @@ const BookCreate = (props) => {
 
   return (
     <div className="container">
-      <form onSubmit={(e) => {
-        e.preventDefault();
-        handleCreate(book);
-      }} action="action_page.php">
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          handleCreate(book);
+        }}
+        action="action_page.php"
+      >
         <div className="row">
           <div className="col-25">
             <label htmlFor="fname">Title:</label>
@@ -76,7 +79,7 @@ const BookCreate = (props) => {
             ></textarea>
           </div>
         </div>
-        
+
         <div className="row">
           <input type="submit" value="Submit" />
         </div>

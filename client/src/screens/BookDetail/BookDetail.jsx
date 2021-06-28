@@ -12,8 +12,6 @@ const BookDetail = (props) => {
   const { id } = useParams();
   let history = useHistory();
   const { currentUser, handleDelete } = props;
-  
-
 
   useEffect(() => {
     const fetchBook = async () => {
@@ -66,7 +64,7 @@ const BookDetail = (props) => {
               userRating={book.ratings.find(
                 (rating) => rating.user_id === currentUser?.id
               )}
-              handleCreateRating={handleCreateRating }
+              handleCreateRating={handleCreateRating}
             />
           </div>
         </div>

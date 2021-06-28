@@ -1,9 +1,9 @@
-import { useState } from "react"
+import { useState } from "react";
 function Register(props) {
   const [formData, setFormData] = useState({
     username: "",
     password: "",
-    password_confirmation: ""
+    password_confirmation: "",
   });
   const { username, password, password_confirmation } = formData;
   const { handleRegister } = props;
@@ -16,36 +16,42 @@ function Register(props) {
     }));
   };
   const handleSubmit = (e) => {
-    e.preventDefault()
-    handleRegister(formData)    
-  }
-  
+    e.preventDefault();
+    handleRegister(formData);
+  };
+
   return (
     <form onSubmit={handleSubmit}>
       <h3>Register</h3>
-      <label>Username:
+      <label>
+        Username:
         <input
-          type='text'
-          name='username'
+          type="text"
+          name="username"
           value={username}
-          onChange={handleChange}/>
+          onChange={handleChange}
+        />
       </label>
-      <label>Password:
+      <label>
+        Password:
         <input
-          type='text'
-          name='password'
+          type="text"
+          name="password"
           value={password}
-          onChange={handleChange}/>
+          onChange={handleChange}
+        />
       </label>
-      <label>Password Confirmation:
+      <label>
+        Password Confirmation:
         <input
-          type='text'
-          name='password_confirmation'
+          type="text"
+          name="password_confirmation"
           value={password_confirmation}
-          onChange={handleChange}/>
+          onChange={handleChange}
+        />
       </label>
       <button>Submit</button>
     </form>
-  )
+  );
 }
 export default Register;

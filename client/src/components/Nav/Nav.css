@@ -39,13 +39,12 @@ nav {
 }
 
 .div-links {
-align-content: right;
+  align-content: right;
 }
 .link {
   flex: 1;
- 
 }
-#login-link{
+#login-link {
   margin-right: 100px;
 }
 .link-div {
@@ -56,11 +55,10 @@ align-content: right;
   padding-right: 20px;
   font-size: 30px;
   font-weight: 450;
-} 
+}
 p.link-welcome {
   width: 200px;
 }
-
 
 #logout:hover {
   transform: scale(1.025);
@@ -83,12 +81,6 @@ a:hover {
   margin-right: 10px;
 }
 
-
-
-
-
-
-
 @media only screen and (max-width: 890px) {
   a {
     font-size: 18px;
@@ -96,13 +88,11 @@ a:hover {
   .nav {
     align-items: center;
   }
-  .links,  #add-book-link{
+  .links,
+  #add-book-link {
     width: 100%;
     flex-direction: column;
   }
-  
-
- 
 }
 
 @media only screen and (max-width: 700px) {
@@ -116,4 +106,3 @@ a:hover {
     font-size: 14px;
   }
 }
-
