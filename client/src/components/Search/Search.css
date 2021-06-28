@@ -18,10 +18,13 @@
 .search-input::placeholder {
   letter-spacing: .3px;
 }
-@media (max-width: 550px) {
+@media (max-width: 800px) {
   .search-form {
     padding: 0px;
   }
+}
+
+@media (max-width: 550px) {
   .search-label {
     padding: 0px;
   }
