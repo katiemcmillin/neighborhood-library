@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import { useParams, Redirect } from "react-router-dom";
-import { getOneBook, putBook } from "../../services/books"
-import "./BookEdit.css"
+import { useParams } from "react-router-dom";
+import { getOneBook } from "../../services/books";
+import "./BookEdit.css";
 
 const BookEdit = (props) => {
   const [book, setBook] = useState({
@@ -10,9 +10,8 @@ const BookEdit = (props) => {
     description: "",
     img_url: "",
   });
-
-  const [isUpdated, setUpdated] = useState(false);
-  let { id } = useParams();
+  const { handleEdit } = props;
+  const { id } = useParams();
 
   useEffect(() => {
     const fetchBook = async () => {
@@ -30,21 +29,16 @@ const BookEdit = (props) => {
     });
   };
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    const updated = await putBook(id, book);
-    setUpdated(updated);
-  };
-
-  if (isUpdated) {
-    return <Redirect to={`/books/${id}`} />;
-  }
-
   return (
     <div className="book-edit">
       <div className="image-container">
         <img className="edit-book-image" src={book.img_url} alt={book.title} />
-        <form onSubmit={handleSubmit}>
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            handleEdit(id, book);
+          }}
+        >
           <input
             className="edit-input-image-link"
             placeholder="Image Link"
@@ -55,7 +49,10 @@ const BookEdit = (props) => {
           />
         </form>
       </div>
-      <form className="edit-form" onSubmit={handleSubmit}>
+      <form className="edit-form" onSubmit={(e) => {
+            e.preventDefault();
+            handleEdit(id, book);
+          }}>
         <label>
           Title:
           <input
