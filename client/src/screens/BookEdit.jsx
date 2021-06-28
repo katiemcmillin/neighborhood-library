@@ -48,7 +48,7 @@ const BookEdit = (props) => {
             className="edit-input-image-link"
             placeholder="Image Link"
             value={book.img_url}
-            name="img_URL"
+            name="img_url"
             required
             onChange={handleChange}
           />

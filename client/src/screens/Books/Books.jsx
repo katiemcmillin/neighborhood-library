@@ -1,7 +1,8 @@
 import {useState, useEffect} from "react"
-import Search from "../components/Search/Search";
-import { getAllBooks } from "../services/books";
-import Book from "../components/Book/Book";
+import Search from "../../components/Search/Search";
+import { getAllBooks } from "../../services/books";
+import Book from "../../components/Book/Book";
+import "./Books.css"
 
 function Books() {
   const [searchResult, setSearchResult] = useState([]);
@@ -28,7 +29,7 @@ function Books() {
       <div className='books'>
         {searchResult.map((book) => {
           return (
-            <Book
+             <Book
               id={book.id}
               title={book.title}
               description={book.description}
