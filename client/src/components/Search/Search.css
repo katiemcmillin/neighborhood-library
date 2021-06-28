@@ -1,5 +1,5 @@
 .search-form {
-  padding-top: 10px;
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,19 +8,22 @@
 
 .search-input {
   width: 70vw;
-  font-size: 25px;
-  letter-spacing: 0.25px;
+  font-size: 18px;
+  letter-spacing: 0.1px;
   padding: 12px 20px 12px 40px;
   border: 1px solid #ddd;
   margin: 40px;
-  box-shadow: 1px 1px 15px 1px rgb(200, 200, 200);
-  font-family: 'Montserrat', sans-serif;
 }
 
 .search-input::placeholder {
   letter-spacing: .3px;
 }
-
-label {
-  font-size: 30px;
+@media (max-width: 550px) {
+  .search-form {
+    padding: 0px;
+  }
+  .search-label {
+    padding: 0px;
+  }
+  
 }

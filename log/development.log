@@ -14092,3 +14092,255 @@ Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 1.3ms | Allocations: 1597)
 Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 3.2ms | Allocations: 1884)
 
 
+Started GET "/books" for ::1 at 2021-06-28 16:35:17 -0400
+Processing by BooksController#index as HTML
+Started GET "/auth/verify" for ::1 at 2021-06-28 16:35:17 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:8:in `index'
+Completed 200 OK in 53ms (Views: 52.6ms | ActiveRecord: 27.2ms | Allocations: 5607)
+
+
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 52ms (Views: 0.2ms | ActiveRecord: 24.9ms | Allocations: 5732)
+
+
+Started GET "/auth/verify" for ::1 at 2021-06-28 16:35:30 -0400
+Started GET "/books" for ::1 at 2021-06-28 16:35:30 -0400
+Processing by BooksController#index as HTML
+Processing by AuthenticationController#verify as HTML
+  [1m[36mBook Load (2.0ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 2.4ms | ActiveRecord: 2.0ms | Allocations: 1181)
+
+
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 5.9ms | Allocations: 1919)
+
+
+Started GET "/books" for ::1 at 2021-06-28 16:35:43 -0400
+Processing by BooksController#index as HTML
+Started GET "/auth/verify" for ::1 at 2021-06-28 16:35:43 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mBook Load (1.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 1.3ms | Allocations: 1750)
+
+
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 1.5ms | Allocations: 1858)
+
+
+Started GET "/books" for ::1 at 2021-06-28 16:35:54 -0400
+Processing by BooksController#index as HTML
+Started GET "/auth/verify" for ::1 at 2021-06-28 16:35:54 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:8:in `index'
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 0.9ms | Allocations: 1655)
+
+
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.3ms | Allocations: 1603)
+
+
+Started GET "/books" for ::1 at 2021-06-28 16:36:06 -0400
+Processing by BooksController#index as HTML
+Started GET "/auth/verify" for ::1 at 2021-06-28 16:36:06 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.5ms | Allocations: 1353)
+
+
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 2.4ms | Allocations: 1893)
+
+
+Started GET "/books" for ::1 at 2021-06-28 16:36:13 -0400
+Processing by BooksController#index as HTML
+Started GET "/auth/verify" for ::1 at 2021-06-28 16:36:13 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mBook Load (2.6ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 3.1ms | ActiveRecord: 2.6ms | Allocations: 1443)
+
+
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.6ms | Allocations: 1858)
+
+
+Started GET "/books" for ::1 at 2021-06-28 16:36:40 -0400
+Processing by BooksController#index as HTML
+Started GET "/auth/verify" for ::1 at 2021-06-28 16:36:40 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:8:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.8ms | Allocations: 1776)
+
+
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 1654)
+
+
+Started GET "/books" for ::1 at 2021-06-28 16:36:41 -0400
+Processing by BooksController#index as HTML
+Started GET "/auth/verify" for ::1 at 2021-06-28 16:36:41 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+  [1m[36mBook Load (1.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.9ms | Allocations: 780)
+
+
+  ↳ app/controllers/books_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 1.4ms | Allocations: 2366)
+
+
+Started GET "/books" for ::1 at 2021-06-28 16:37:02 -0400
+Processing by BooksController#index as HTML
+Started GET "/auth/verify" for ::1 at 2021-06-28 16:37:02 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.8ms | Allocations: 1604)
+
+
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 2.7ms | Allocations: 1812)
+
+
+Started GET "/books" for ::1 at 2021-06-28 16:37:03 -0400
+Processing by BooksController#index as HTML
+Started GET "/auth/verify" for ::1 at 2021-06-28 16:37:03 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mBook Load (6.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 3.5ms | ActiveRecord: 6.1ms | Allocations: 1615)
+
+
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 3.0ms | Allocations: 1858)
+
+
+Started GET "/books" for ::1 at 2021-06-28 16:39:39 -0400
+Processing by BooksController#index as HTML
+Started GET "/auth/verify" for ::1 at 2021-06-28 16:39:39 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.6ms | Allocations: 1595)
+
+
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 2.0ms | Allocations: 1858)
+
+
+Started GET "/books" for ::1 at 2021-06-28 16:41:16 -0400
+Processing by BooksController#index as HTML
+Started GET "/auth/verify" for ::1 at 2021-06-28 16:41:16 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mBook Load (2.0ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+  ↳ app/controllers/books_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 1157)
+
+
+Completed 200 OK in 6ms (Views: 3.4ms | ActiveRecord: 2.0ms | Allocations: 2197)
+
+
+Started GET "/books" for ::1 at 2021-06-28 16:43:26 -0400
+Processing by BooksController#index as HTML
+Started GET "/auth/verify" for ::1 at 2021-06-28 16:43:26 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:8:in `index'
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 1.1ms | Allocations: 1653)
+
+
+Completed 200 OK in 7ms (Views: 4.0ms | ActiveRecord: 0.9ms | Allocations: 1699)
+
+
+Started GET "/books" for ::1 at 2021-06-28 16:45:11 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.4ms | Allocations: 1027)
+
+
+Started GET "/auth/verify" for ::1 at 2021-06-28 16:45:11 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 1.2ms | Allocations: 726)
+
+
+Started GET "/books" for ::1 at 2021-06-28 16:46:05 -0400
+Processing by BooksController#index as HTML
+Started GET "/auth/verify" for ::1 at 2021-06-28 16:46:05 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.7ms | Allocations: 1498)
+
+
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 2.3ms | Allocations: 1893)
+
+
+Started GET "/books" for ::1 at 2021-06-28 16:46:17 -0400
+Processing by BooksController#index as HTML
+Started GET "/auth/verify" for ::1 at 2021-06-28 16:46:17 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:8:in `index'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.5ms | Allocations: 1778)
+
+
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.8ms | Allocations: 1652)
+
+
+Started GET "/books" for ::1 at 2021-06-28 16:46:18 -0400
+Processing by BooksController#index as HTML
+Started GET "/auth/verify" for ::1 at 2021-06-28 16:46:18 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBook Load (5.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+  ↳ app/controllers/books_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 6.8ms | ActiveRecord: 5.2ms | Allocations: 2203)
+
+
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 4.5ms | Allocations: 1191)
+
+
+Started GET "/books" for ::1 at 2021-06-28 16:47:24 -0400
+Processing by BooksController#index as HTML
+Started GET "/auth/verify" for ::1 at 2021-06-28 16:47:24 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mBook Load (2.6ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 3.2ms | ActiveRecord: 2.6ms | Allocations: 1613)
+
+
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 3.5ms | Allocations: 1859)
+
+
