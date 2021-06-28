@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import { getOneBook, deleteBook, getAllBooks } from "../../services/books";
+import { getOneBook} from "../../services/books";
 import { postRating } from "../../services/ratings";
-import { useParams, Link, useHistory } from "react-router-dom";
+import { useParams, Link} from "react-router-dom";
 import AvgRating from "../../components/AvgRating/AvgRating";
 import RatingCreate from "../../components/RatingCreate/RatingCreate";
 import "./BookDetail.css";
@@ -10,7 +10,6 @@ const BookDetail = (props) => {
   const [book, setBook] = useState(null);
   const [isLoaded, setLoaded] = useState(false);
   const { id } = useParams();
-  let history = useHistory();
   const { currentUser, handleDelete } = props;
 
   useEffect(() => {

@@ -14759,3 +14759,17 @@ Completed 200 OK in 9ms (Views: 6.3ms | ActiveRecord: 2.6ms | Allocations: 1958)
 Completed 200 OK in 75ms (Views: 0.4ms | ActiveRecord: 18.6ms | Allocations: 3946)
 
 
+Started GET "/books" for ::1 at 2021-06-28 17:28:13 -0400
+Processing by BooksController#index as HTML
+Started GET "/auth/verify" for ::1 at 2021-06-28 17:28:13 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+  [1m[36mBook Load (1.7ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.6ms | Allocations: 781)
+
+
+  ↳ app/controllers/books_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 1.7ms | Allocations: 2436)
+
+
