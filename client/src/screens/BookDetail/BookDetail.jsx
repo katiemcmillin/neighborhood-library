@@ -37,7 +37,7 @@ const BookDetail = (props) => {
   return (
     <div className="book-detail">
       <img className="book-detail-image" src={book.img_url} alt={book.title} />
-      <div className="detail">
+      <div className="flex-container">
         <div className="label-container">
           <span className="detail-label">Title:</span>
           <span>{book.title}</span>

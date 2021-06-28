@@ -1,4 +1,5 @@
 import Nav from "../components/Nav/Nav";
+import "./Layout.css"
 
 const Layout = (props) => {
   const { currentUser, children, handleLogout } = props;

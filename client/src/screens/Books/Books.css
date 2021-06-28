@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 40px;
+  height: 600vh;
 }
 
 .book-div {

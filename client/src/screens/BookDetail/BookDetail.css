@@ -1,3 +1,4 @@
+/* https://www.w3schools.com/css/css3_flexbox_container.asp */
 .book-detail {
   display: flex;
   flex-direction: row;
@@ -6,6 +7,13 @@
   align-items: flex-start;
   border: 2px solid black;
   box-sizing: border-box;
+  width: auto;
+  height: auto;
+  font-size: 14px;
+  line-height: 36px;
+  width: 80%;
+  top: 40px;
+  padding: 18px 20px 18px 20px;
 }
 span {
   color: #845ec2;
@@ -125,3 +133,4 @@ span {
     width: 40%;
   }
 }
+
