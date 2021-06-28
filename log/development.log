@@ -7083,3 +7083,1076 @@ Processing by RatingsController#index as HTML
 Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.3ms | Allocations: 1245)
 
 
+Started GET "/books/3" for ::1 at 2021-06-27 20:28:56 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 664)
+
+
+Started GET "/ratings" for ::1 at 2021-06-27 20:28:56 -0400
+Processing by RatingsController#index as HTML
+  [1m[36mRating Load (0.3ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 1245)
+
+
+Started GET "/books/3" for ::1 at 2021-06-27 20:30:24 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"3"}
+Started GET "/auth/verify" for ::1 at 2021-06-27 20:30:24 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mBook Load (1.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 1.4ms | Allocations: 1223)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 0.4ms | Allocations: 1598)
+
+
+Started GET "/ratings" for ::1 at 2021-06-27 20:30:24 -0400
+Processing by RatingsController#index as HTML
+  [1m[36mRating Load (0.9ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.9ms | Allocations: 1266)
+
+
+Started GET "/books" for ::1 at 2021-06-27 20:33:01 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.3ms | Allocations: 1003)
+
+
+Started GET "/books/1" for ::1 at 2021-06-27 20:33:19 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 668)
+
+
+Started GET "/ratings" for ::1 at 2021-06-27 20:33:19 -0400
+Processing by RatingsController#index as HTML
+  [1m[36mRating Load (0.3ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.3ms | Allocations: 1245)
+
+
+Started GET "/books/1" for ::1 at 2021-06-27 20:34:31 -0400
+Started GET "/ratings" for ::1 at 2021-06-27 20:34:31 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+Processing by RatingsController#index as HTML
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+  [1m[36mRating Load (0.3ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 830)
+
+
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.3ms | Allocations: 1911)
+
+
+Started GET "/books/1" for ::1 at 2021-06-27 20:34:46 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+Started GET "/auth/verify" for ::1 at 2021-06-27 20:34:46 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.5ms | Allocations: 1256)
+
+
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 1.3ms | Allocations: 1567)
+
+
+Started GET "/ratings" for ::1 at 2021-06-27 20:34:46 -0400
+Processing by RatingsController#index as HTML
+  [1m[36mRating Load (0.8ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.8ms | Allocations: 1245)
+
+
+Started GET "/books/1" for ::1 at 2021-06-27 20:36:01 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+Started GET "/auth/verify" for ::1 at 2021-06-27 20:36:01 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.6ms | Allocations: 1257)
+
+
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 1552)
+
+
+Started GET "/ratings" for ::1 at 2021-06-27 20:36:01 -0400
+Processing by RatingsController#index as HTML
+  [1m[36mRating Load (0.4ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms | Allocations: 1245)
+
+
+Started GET "/books/1" for ::1 at 2021-06-27 20:37:30 -0400
+Started GET "/ratings" for ::1 at 2021-06-27 20:37:30 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+Processing by RatingsController#index as HTML
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+  [1m[36mRating Load (0.3ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 830)
+
+
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.3ms | Allocations: 1911)
+
+
+Started GET "/books/1" for ::1 at 2021-06-27 20:38:46 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 664)
+
+
+Started GET "/ratings" for ::1 at 2021-06-27 20:39:02 -0400
+Processing by RatingsController#index as HTML
+Started GET "/books/1" for ::1 at 2021-06-27 20:39:02 -0400
+Processing by BooksController#show as HTML
+  [1m[36mRating Load (0.7ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  Parameters: {"id"=>"1"}
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.7ms | Allocations: 1744)
+
+
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 1608)
+
+
+Started GET "/books/1" for ::1 at 2021-06-27 20:39:13 -0400
+Processing by BooksController#show as HTML
+Started GET "/auth/verify" for ::1 at 2021-06-27 20:39:13 -0400
+  Parameters: {"id"=>"1"}
+Processing by AuthenticationController#verify as HTML
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 0.4ms | Allocations: 1338)
+
+
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1393)
+
+
+Started GET "/ratings" for ::1 at 2021-06-27 20:39:13 -0400
+Processing by RatingsController#index as HTML
+  [1m[36mRating Load (0.3ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1246)
+
+
+Started GET "/books/1" for ::1 at 2021-06-27 20:40:00 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+Started GET "/auth/verify" for ::1 at 2021-06-27 20:40:00 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mBook Load (1.9ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 1.9ms | Allocations: 1256)
+
+
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 6ms (Views: 0.6ms | ActiveRecord: 3.1ms | Allocations: 1598)
+
+
+Started GET "/ratings" for ::1 at 2021-06-27 20:40:00 -0400
+Processing by RatingsController#index as HTML
+  [1m[36mRating Load (4.2ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 9ms (Views: 4.3ms | ActiveRecord: 4.2ms | Allocations: 1245)
+
+
+Started GET "/ratings" for ::1 at 2021-06-27 20:40:56 -0400
+Started GET "/books/1" for ::1 at 2021-06-27 20:40:56 -0400
+Processing by RatingsController#index as HTML
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRating Load (0.2ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 1668)
+
+
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 1834)
+
+
+Started GET "/ratings" for ::1 at 2021-06-27 20:41:10 -0400
+Processing by RatingsController#index as HTML
+Started GET "/books/1" for ::1 at 2021-06-27 20:41:10 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRating Load (0.8ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.8ms | Allocations: 1913)
+
+
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 1799)
+
+
+Started GET "/books/1" for ::1 at 2021-06-27 20:42:02 -0400
+Processing by BooksController#show as HTML
+Started GET "/ratings" for ::1 at 2021-06-27 20:42:02 -0400
+  Parameters: {"id"=>"1"}
+Processing by RatingsController#index as HTML
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+  [1m[36mRating Load (3.1ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 0.8ms | Allocations: 982)
+
+
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 7ms (Views: 3.8ms | ActiveRecord: 3.1ms | Allocations: 2151)
+
+
+Started GET "/books/1" for ::1 at 2021-06-27 20:42:09 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 664)
+
+
+Started GET "/books/1" for ::1 at 2021-06-27 20:42:20 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 664)
+
+
+Started GET "/books/1" for ::1 at 2021-06-27 20:42:24 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 664)
+
+
+Started GET "/books/1" for ::1 at 2021-06-27 20:42:29 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+Started GET "/auth/verify" for ::1 at 2021-06-27 20:42:29 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mBook Load (3.0ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+  [1m[36mUser Load (4.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 4.7ms | Allocations: 1392)
+
+
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 3.0ms | Allocations: 1022)
+
+
+Started GET "/ratings" for ::1 at 2021-06-27 20:42:29 -0400
+Processing by RatingsController#index as HTML
+  [1m[36mRating Load (1.0ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 1.0ms | Allocations: 1245)
+
+
+Started GET "/books/1" for ::1 at 2021-06-27 20:42:57 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+Started GET "/auth/verify" for ::1 at 2021-06-27 20:42:57 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 0.7ms | Allocations: 1045)
+
+
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 1632)
+
+
+Started GET "/ratings" for ::1 at 2021-06-27 20:42:57 -0400
+Processing by RatingsController#index as HTML
+  [1m[36mRating Load (0.4ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.4ms | Allocations: 1245)
+
+
+Started GET "/books/1" for ::1 at 2021-06-27 20:43:04 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+Started GET "/auth/verify" for ::1 at 2021-06-27 20:43:04 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 7ms (Views: 0.7ms | ActiveRecord: 0.6ms | Allocations: 1195)
+
+
+  [1m[36mUser Load (5.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 5.8ms | Allocations: 1631)
+
+
+Started GET "/ratings" for ::1 at 2021-06-27 20:43:04 -0400
+Processing by RatingsController#index as HTML
+  [1m[36mRating Load (2.2ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 3.4ms | ActiveRecord: 2.2ms | Allocations: 1245)
+
+
+Started GET "/books/1" for ::1 at 2021-06-27 20:44:04 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+Started GET "/auth/verify" for ::1 at 2021-06-27 20:44:04 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mBook Load (4.0ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 4.0ms | Allocations: 1013)
+
+
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 2.4ms | Allocations: 1598)
+
+
+Started GET "/ratings" for ::1 at 2021-06-27 20:44:04 -0400
+Processing by RatingsController#index as HTML
+  [1m[36mRating Load (3.8ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 10ms (Views: 5.9ms | ActiveRecord: 3.8ms | Allocations: 1246)
+
+
+Started GET "/books/1" for ::1 at 2021-06-27 20:44:12 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+Started GET "/auth/verify" for ::1 at 2021-06-27 20:44:12 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mBook Load (1.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 1.4ms | Allocations: 1182)
+
+
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 3.0ms | Allocations: 1599)
+
+
+Started GET "/ratings" for ::1 at 2021-06-27 20:44:12 -0400
+Processing by RatingsController#index as HTML
+  [1m[36mRating Load (0.3ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms | Allocations: 1245)
+
+
+Started GET "/ratings" for ::1 at 2021-06-27 20:50:54 -0400
+Processing by RatingsController#index as HTML
+Started GET "/books/1" for ::1 at 2021-06-27 20:50:54 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRating Load (1.9ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 31ms (Views: 30.6ms | ActiveRecord: 14.5ms | Allocations: 5757)
+
+
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 33ms (Views: 0.5ms | ActiveRecord: 13.5ms | Allocations: 5907)
+
+
+Started GET "/books/1" for ::1 at 2021-06-27 20:51:15 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 664)
+
+
+Started GET "/books/1" for ::1 at 2021-06-27 20:51:21 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 664)
+
+
+Started GET "/books/1" for ::1 at 2021-06-27 20:52:26 -0400
+Started GET "/ratings" for ::1 at 2021-06-27 20:52:26 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+Processing by RatingsController#index as HTML
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 976)
+
+
+  [1m[36mRating Load (0.8ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.8ms | Allocations: 2151)
+
+
+Started GET "/books/1" for ::1 at 2021-06-27 20:52:35 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (1.0ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 28ms (Views: 0.3ms | ActiveRecord: 1.6ms | Allocations: 716)
+
+
+Started GET "/books/1" for ::1 at 2021-06-27 20:52:59 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+Started GET "/auth/verify" for ::1 at 2021-06-27 20:52:59 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mBook Load (18.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 24ms (Views: 0.3ms | ActiveRecord: 18.4ms | Allocations: 1402)
+
+
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 28ms (Views: 0.2ms | ActiveRecord: 1.1ms | Allocations: 1634)
+
+
+Started GET "/ratings" for ::1 at 2021-06-27 20:52:59 -0400
+Processing by RatingsController#index as HTML
+  [1m[36mRating Load (1.1ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 1.1ms | Allocations: 1266)
+
+
+Started GET "/ratings" for ::1 at 2021-06-27 20:56:10 -0400
+Started GET "/books/1" for ::1 at 2021-06-27 20:56:10 -0400
+Processing by RatingsController#index as HTML
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRating Load (0.3ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+  [1m[36mBook Load (1.0ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.3ms | Allocations: 1361)
+
+
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 1.0ms | Allocations: 2026)
+
+
+Started GET "/ratings" for ::1 at 2021-06-27 20:57:09 -0400
+Processing by RatingsController#index as HTML
+Started GET "/books/1" for ::1 at 2021-06-27 20:57:09 -0400
+Processing by BooksController#show as HTML
+  [1m[36mRating Load (0.4ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms | Allocations: 1641)
+
+
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 6ms (Views: 0.7ms | ActiveRecord: 0.7ms | Allocations: 903)
+
+
+Started GET "/ratings" for ::1 at 2021-06-27 20:57:19 -0400
+Processing by RatingsController#index as HTML
+Started GET "/books/1" for ::1 at 2021-06-27 20:57:19 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRating Load (0.6ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.6ms | Allocations: 1677)
+
+
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.7ms | Allocations: 2019)
+
+
+Started GET "/books/1" for ::1 at 2021-06-27 20:58:30 -0400
+Started GET "/auth/verify" for ::1 at 2021-06-27 20:58:30 -0400
+Processing by BooksController#show as HTML
+Processing by AuthenticationController#verify as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.9ms | Allocations: 688)
+
+
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 2.3ms | Allocations: 1669)
+
+
+Started GET "/ratings" for ::1 at 2021-06-27 20:58:30 -0400
+Processing by RatingsController#index as HTML
+  [1m[36mRating Load (0.9ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.9ms | Allocations: 1245)
+
+
+Started GET "/books/1" for ::1 at 2021-06-27 20:58:37 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+Started GET "/auth/verify" for ::1 at 2021-06-27 20:58:37 -0400
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by AuthenticationController#verify as HTML
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 1163)
+
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 1216)
+
+
+Started GET "/ratings" for ::1 at 2021-06-27 20:58:37 -0400
+Processing by RatingsController#index as HTML
+  [1m[36mRating Load (0.3ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 1245)
+
+
+Started GET "/books/1" for ::1 at 2021-06-27 20:58:37 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+Started GET "/auth/verify" for ::1 at 2021-06-27 20:58:37 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mBook Load (1.8ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.8ms | Allocations: 1202)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 1598)
+
+
+Started GET "/ratings" for ::1 at 2021-06-27 20:58:37 -0400
+Processing by RatingsController#index as HTML
+  [1m[36mRating Load (0.3ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1245)
+
+
+Started GET "/books/1" for ::1 at 2021-06-27 20:58:59 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+Started GET "/auth/verify" for ::1 at 2021-06-27 20:58:59 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mBook Load (1.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 1.4ms | Allocations: 1223)
+
+
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 1570)
+
+
+Started GET "/ratings" for ::1 at 2021-06-27 20:58:59 -0400
+Processing by RatingsController#index as HTML
+  [1m[36mRating Load (0.4ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.4ms | Allocations: 1245)
+
+
+Started GET "/books/1" for ::1 at 2021-06-27 20:59:04 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (1.0ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 1.0ms | Allocations: 871)
+
+
+Started GET "/auth/verify" for ::1 at 2021-06-27 20:59:04 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 727)
+
+
+Started GET "/ratings" for ::1 at 2021-06-27 20:59:04 -0400
+Processing by RatingsController#index as HTML
+  [1m[36mRating Load (0.3ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 1245)
+
+
+Started GET "/books/1" for ::1 at 2021-06-27 20:59:45 -0400
+Processing by BooksController#show as HTML
+Started GET "/auth/verify" for ::1 at 2021-06-27 20:59:45 -0400
+  Parameters: {"id"=>"1"}
+Processing by AuthenticationController#verify as HTML
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 1032)
+
+
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.4ms | Allocations: 1583)
+
+
+Started GET "/ratings" for ::1 at 2021-06-27 20:59:45 -0400
+Processing by RatingsController#index as HTML
+  [1m[36mRating Load (0.5ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.5ms | Allocations: 1245)
+
+
+Started GET "/books/1" for ::1 at 2021-06-27 20:59:46 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+Started GET "/auth/verify" for ::1 at 2021-06-27 20:59:46 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 1412)
+
+
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.7ms | Allocations: 1552)
+
+
+Started GET "/ratings" for ::1 at 2021-06-27 20:59:46 -0400
+Processing by RatingsController#index as HTML
+  [1m[36mRating Load (0.4ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.4ms | Allocations: 1245)
+
+
+Started GET "/books/1" for ::1 at 2021-06-27 20:59:47 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Started GET "/auth/verify" for ::1 at 2021-06-27 20:59:47 -0400
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 1062)
+
+
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 773)
+
+
+Started GET "/ratings" for ::1 at 2021-06-27 20:59:47 -0400
+Processing by RatingsController#index as HTML
+  [1m[36mRating Load (0.3ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms | Allocations: 1245)
+
+
+Started GET "/books/1" for ::1 at 2021-06-27 21:00:09 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+Started GET "/auth/verify" for ::1 at 2021-06-27 21:00:09 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.6ms | Allocations: 1194)
+
+
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.4ms | Allocations: 1570)
+
+
+Started GET "/ratings" for ::1 at 2021-06-27 21:00:09 -0400
+Processing by RatingsController#index as HTML
+  [1m[36mRating Load (0.4ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.4ms | Allocations: 1245)
+
+
+Started GET "/books/1" for ::1 at 2021-06-27 21:01:17 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 664)
+
+
+Started GET "/books/1" for ::1 at 2021-06-27 21:03:22 -0400
+Started GET "/ratings" for ::1 at 2021-06-27 21:03:22 -0400
+Processing by BooksController#show as HTML
+Processing by RatingsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRating Load (0.2ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1342)
+
+
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 2014)
+
+
+Started GET "/books/1" for ::1 at 2021-06-27 21:03:30 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+Started GET "/ratings" for ::1 at 2021-06-27 21:03:30 -0400
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by RatingsController#index as HTML
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 1195)
+
+
+  [1m[36mRating Load (0.6ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.6ms | Allocations: 1782)
+
+
+Started GET "/ratings" for ::1 at 2021-06-27 21:03:40 -0400
+Started GET "/books/1" for ::1 at 2021-06-27 21:03:40 -0400
+Processing by RatingsController#index as HTML
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRating Load (0.3ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 2126)
+
+
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 1126)
+
+
+Started GET "/books/1" for ::1 at 2021-06-27 21:03:52 -0400
+Started GET "/ratings" for ::1 at 2021-06-27 21:03:52 -0400
+Processing by BooksController#show as HTML
+Processing by RatingsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+  [1m[36mRating Load (0.3ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 719)
+
+
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 1947)
+
+
+Started GET "/ratings" for ::1 at 2021-06-27 21:04:01 -0400
+Started GET "/books/1" for ::1 at 2021-06-27 21:04:01 -0400
+Processing by RatingsController#index as HTML
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 699)
+
+
+  [1m[36mRating Load (1.1ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 1.1ms | Allocations: 2157)
+
+
+Started GET "/books/1" for ::1 at 2021-06-27 21:05:14 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 664)
+
+
+Started GET "/books" for ::1 at 2021-06-27 21:05:17 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.3ms | Allocations: 1003)
+
+
+Started GET "/books" for ::1 at 2021-06-27 21:05:44 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.4ms | Allocations: 1004)
+
+
+Started GET "/books/1" for ::1 at 2021-06-27 21:05:54 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 664)
+
+
+Started GET "/ratings" for ::1 at 2021-06-27 21:05:54 -0400
+Processing by RatingsController#index as HTML
+  [1m[36mRating Load (0.3ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.3ms | Allocations: 1245)
+
+
+Started GET "/books" for ::1 at 2021-06-27 21:06:01 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms | Allocations: 1003)
+
+
+Started GET "/books/4" for ::1 at 2021-06-27 21:06:10 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 664)
+
+
+Started GET "/ratings" for ::1 at 2021-06-27 21:06:10 -0400
+Processing by RatingsController#index as HTML
+  [1m[36mRating Load (0.3ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.3ms | Allocations: 1245)
+
+
+Started GET "/books" for ::1 at 2021-06-27 21:06:22 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.3ms | Allocations: 1005)
+
+
+Started GET "/books/3" for ::1 at 2021-06-27 21:06:31 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 664)
+
+
+Started GET "/ratings" for ::1 at 2021-06-27 21:06:31 -0400
+Processing by RatingsController#index as HTML
+  [1m[36mRating Load (1.0ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 1.0ms | Allocations: 1246)
+
+
+Started GET "/ratings" for ::1 at 2021-06-27 21:11:12 -0400
+Started GET "/books/3" for ::1 at 2021-06-27 21:11:12 -0400
+Processing by RatingsController#index as HTML
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRating Load (0.8ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.8ms | Allocations: 1590)
+
+
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 27ms (Views: 0.2ms | ActiveRecord: 11.6ms | Allocations: 4180)
+
+
+Started GET "/books/3" for ::1 at 2021-06-27 21:11:17 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBook Load (2.7ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 2.7ms | Allocations: 664)
+
+
+Started GET "/books/3" for ::1 at 2021-06-27 21:11:24 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"3"}
+Started GET "/ratings" for ::1 at 2021-06-27 21:11:24 -0400
+Processing by RatingsController#index as HTML
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+  [1m[36mRating Load (0.5ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 1010)
+
+
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.5ms | Allocations: 1878)
+
+
+Started GET "/books/3" for ::1 at 2021-06-27 21:11:30 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBook Load (2.6ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 2.6ms | Allocations: 664)
+
+
+Started GET "/books/3" for ::1 at 2021-06-27 21:11:33 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 664)
+
+
+Started GET "/books/3" for ::1 at 2021-06-27 21:11:36 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 664)
+
+
+Started GET "/auth/verify" for ::1 at 2021-06-27 21:12:52 -0400
+Started GET "/books/3" for ::1 at 2021-06-27 21:12:52 -0400
+Processing by AuthenticationController#verify as HTML
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 845)
+
+
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 1525)
+
+
+Started GET "/ratings" for ::1 at 2021-06-27 21:12:52 -0400
+Processing by RatingsController#index as HTML
+  [1m[36mRating Load (0.8ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.8ms | Allocations: 1267)
+
+
+Started GET "/books/3" for ::1 at 2021-06-27 21:13:51 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"3"}
+Started GET "/auth/verify" for ::1 at 2021-06-27 21:13:51 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBook Load (2.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 1095)
+
+
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 2.2ms | Allocations: 1836)
+
+
+Started GET "/ratings" for ::1 at 2021-06-27 21:13:51 -0400
+Processing by RatingsController#index as HTML
+  [1m[36mRating Load (1.8ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 1.8ms | Allocations: 1245)
+
+
+Started GET "/books/3" for ::1 at 2021-06-27 21:14:54 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 664)
+
+
+Started GET "/ratings" for ::1 at 2021-06-27 21:14:58 -0400
+Started GET "/books/3" for ::1 at 2021-06-27 21:14:58 -0400
+Processing by RatingsController#index as HTML
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRating Load (0.3ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1363)
+
+
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 2073)
+
+
+Started GET "/books/3" for ::1 at 2021-06-27 21:15:11 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 664)
+
+
+Started GET "/books/3" for ::1 at 2021-06-27 21:18:14 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"3"}
+Started GET "/auth/verify" for ::1 at 2021-06-27 21:18:14 -0400
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.6ms | Allocations: 1062)
+
+
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.9ms | Allocations: 822)
+
+
+Started GET "/ratings" for ::1 at 2021-06-27 21:18:14 -0400
+Processing by RatingsController#index as HTML
+  [1m[36mRating Load (0.2ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 1245)
+
+
+Started GET "/books/3" for ::1 at 2021-06-27 21:18:14 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"3"}
+Started GET "/auth/verify" for ::1 at 2021-06-27 21:18:14 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 1215)
+
+
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.9ms | Allocations: 1568)
+
+
+Started GET "/ratings" for ::1 at 2021-06-27 21:18:14 -0400
+Processing by RatingsController#index as HTML
+  [1m[36mRating Load (0.6ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.6ms | Allocations: 1245)
+
+
+Started GET "/books/3" for ::1 at 2021-06-27 21:18:15 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"3"}
+Started GET "/auth/verify" for ::1 at 2021-06-27 21:18:15 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mBook Load (1.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 1.2ms | Allocations: 990)
+
+
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.8ms | Allocations: 1551)
+
+
+Started GET "/ratings" for ::1 at 2021-06-27 21:18:15 -0400
+Processing by RatingsController#index as HTML
+  [1m[36mRating Load (0.6ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.6ms | Allocations: 1245)
+
+
+Started GET "/books/3" for ::1 at 2021-06-27 21:22:48 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44:in `set_book'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 664)
+
+

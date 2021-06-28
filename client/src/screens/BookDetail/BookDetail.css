@@ -1,0 +1,130 @@
+.book-detail {
+  display: flex;
+  flex-direction: row;
+  padding: 100px;
+  padding-top: 80px;
+  align-items: flex-start;
+  border: 2px solid black;
+}
+span {
+  color: #845ec2;
+}
+.label-container{
+display: flex;
+
+}
+.detail-label {
+text-align: left;
+}
+.detail {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 2px solid black;
+  background-color: #fff6ff;
+}
+
+.detail > * {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.name {
+  letter-spacing: 1px;
+}
+
+
+
+
+.description {
+  letter-spacing: 0.9px;
+  margin-left: 0px;
+}
+
+.book-detail-image {
+  width: 600px;
+  padding: 0 40px;
+}
+
+.size {
+  margin-top: 40px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 100px;
+  margin-left: 20px;
+}
+
+.edit-button {
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  align-self: center;
+  background-color: #fefedf;
+  color: #845ec2;
+  border-radius: 5%;
+  box-shadow: 2px 2px 10px 2px #cecece;
+  cursor: pointer;
+  padding: 8px;
+  width: 96px;
+}
+
+.delete-button {
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  align-self: center;
+  background-color: #fefedf;
+  color: #845ec2;
+  border: none;
+  border-radius: 5%;
+  box-shadow: 2px 2px 10px 2px #cecece;
+  cursor: pointer;
+  padding: 8px;
+  width: 96px;
+}
+
+.edit-link {
+  color: white;
+
+}
+@media (max-width: 1024px) {
+  .name {
+      font-size: 32px;
+  }
+  .book-detail-image {
+      width: 500px;
+      margin-top: -100px;
+      padding: 10px;
+  }
+  .book-detail {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .book-detail-image {
+      width: 300px;
+      margin: 15px;
+      padding: 10px;
+  }
+  .book-detail {
+      padding: 0px;
+      padding-top: 120px;
+  }
+  .button-container {
+      padding: 20px;
+      padding-bottom: 80px;
+  }
+  .edit-button, .delete-button {
+      width: 40%;
+  }
+}
