@@ -1,0 +1,185 @@
+.book-edit {
+  display: flex;
+  padding-top: 25px;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.edit-book-image {
+  width: 500px;
+  padding: 0 40px;
+  padding-bottom: 5px;
+}
+
+.edit-input-image-link {
+  width: 300px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.edit-form {
+  line-height: 1.6;
+  background-color: #fff6ff;
+}
+
+.edit-form > * {
+  width: 100%;
+  padding: 20px;
+  margin: 80px 0px;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.create-form {
+  margin-top: 50px;
+}
+
+Layout {
+  margin-left: 30px;
+}
+
+.input-name {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.textarea-description {
+  font-size: 16px;
+  letter-spacing: 0.9px;
+  line-height: 1.6;
+}
+
+.save-button {
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 40px;
+  width: 200px;
+  margin-top: 40px;
+  margin-left: 300px;
+  background-color: black;
+  border: none;
+  box-shadow: 2px 2px 10px 2px #cecece;
+  cursor: pointer;
+  padding: 2px;
+  margin-left: 400px;
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  .save-button {
+    font-size: 22px;
+    height: 40px;
+    width: 100px;
+    margin-top: 40px;
+    background-color: rgb(8, 143, 143);
+    color: white;
+    border: none;
+    box-shadow: 2px 2px 10px 2px #cecece;
+    cursor: pointer;
+    padding: 2px;
+    margin-left: 50px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  .input-name {
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+    padding: 8px;
+  }
+  .edit-form {
+    text-align: center;
+    margin-right: 10px;
+  }
+  .textarea-description {
+    width: 100%;
+  }
+  .book-edit {
+    width: 100%;
+    flex-direction: column;
+    margin-left: 0px;
+  }
+  .image-container {
+    width: 100%;
+    margin-top: -7px;
+  }
+}
+.edit-book-image {
+  text-align: center;
+}
+.edit-input-image-link {
+  margin-left: 8px;
+  text-align: center;
+  margin-top: 8px;
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+.save-button {
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 40px;
+  width: 100px;
+  margin-top: 40px;
+  background-color: rgb(8, 143, 143);
+  color: white;
+  border: none;
+  box-shadow: 2px 2px 10px 2px #cecece;
+  cursor: pointer;
+  padding: 2px;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
+  .input-name {
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+    padding: 8px;
+  }
+  .edit-form {
+    text-align: center;
+    margin-right: 10px;
+  }
+  .textarea-description {
+    width: 100%;
+  }
+  .book-edit {
+    width: 100%;
+    flex-direction: column;
+    margin-left: 70px;
+  }
+  .image-container {
+    width: 100%;
+  }
+  .edit-book-image {
+    margin-top: 70px;
+  }
+  .edit-input-image-link {
+    width: 100%;
+    margin-left: 8px;
+    text-align: center;
+    margin-top: 8px;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+      "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+      "Helvetica Neue", sans-serif;
+  }
+  .save-button {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 40px;
+    width: 100px;
+    margin-top: 40px;
+    background-color: rgb(8, 143, 143);
+    color: white;
+    border: none;
+    box-shadow: 2px 2px 10px 2px #cecece;
+    cursor: pointer;
+    padding: 2px;
+    margin-left: 50px;
+  }
+}

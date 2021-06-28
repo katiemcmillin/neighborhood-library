@@ -2,7 +2,7 @@ import { Switch, Route } from "react-router-dom";
 import Books from "../screens/Books/Books";
 import BookDetail from "../screens/BookDetail/BookDetail";
 import BookCreate from "../screens/BookCreate";
-import BookEdit from "../screens/BookEdit";
+import BookEdit from "../screens/BookEdit/BookEdit";
 
 function MainContainer(props) {
 

@@ -30,7 +30,7 @@ nav {
   display: flex;
   text-align: left;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   font-size: 30px;
   margin-right: 100px;
   padding-right: 200px;
@@ -80,3 +80,38 @@ a:hover {
 #add-book-link {
   margin-right: 10px;
 }
+
+
+
+
+
+
+
+@media only screen and (max-width: 890px) {
+  a {
+    font-size: 18px;
+  }
+  .nav {
+    align-items: center;
+  }
+  .links,  #add-book-link{
+    width: 100%;
+    flex-direction: column;
+  }
+  
+
+ 
+}
+
+@media only screen and (max-width: 700px) {
+  a {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  a {
+    font-size: 14px;
+  }
+}
+

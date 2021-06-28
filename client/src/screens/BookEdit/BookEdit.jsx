@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams, Redirect } from "react-router-dom";
-import { getOneBook, putBook } from "../services/books"
+import { getOneBook, putBook } from "../../services/books"
+import "./BookEdit.css"
 
 const BookEdit = (props) => {
   const [book, setBook] = useState({
