@@ -25,6 +25,7 @@ function Books() {
   const handleSubmit = (event) => event.preventDefault();
 
   return (<div>
+    <h3>Check Out A Book!</h3>
       <Search onSubmit={handleSubmit} handleSearch={handleSearch} />
       <div className='books'>
         {searchResult.map((book) => {
