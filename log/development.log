@@ -8727,3 +8727,157 @@ Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 3.1ms | Allocations: 761)
 Completed 200 OK in 10ms (Views: 5.8ms | ActiveRecord: 3.9ms | Allocations: 2852)
 
 
+Started GET "/ratings" for ::1 at 2021-06-28 08:38:45 -0400
+Processing by RatingsController#index as HTML
+Started GET "/auth/verify" for ::1 at 2021-06-28 08:38:45 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mRating Load (0.4ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 48ms (Views: 47.8ms | ActiveRecord: 7.5ms | Allocations: 6020)
+
+
+Completed 200 OK in 45ms (Views: 0.1ms | ActiveRecord: 5.7ms | Allocations: 5899)
+
+
+Started GET "/ratings" for ::1 at 2021-06-28 08:39:41 -0400
+Processing by RatingsController#index as HTML
+Started GET "/auth/verify" for ::1 at 2021-06-28 08:39:41 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mRating Load (1.1ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 1.0ms | Allocations: 1192)
+
+
+Completed 200 OK in 14ms (Views: 12.2ms | ActiveRecord: 1.1ms | Allocations: 2747)
+
+
+Started GET "/ratings" for ::1 at 2021-06-28 08:39:46 -0400
+Processing by RatingsController#index as HTML
+Started GET "/auth/verify" for ::1 at 2021-06-28 08:39:46 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mRating Load (8.5ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 16ms (Views: 6.6ms | ActiveRecord: 8.5ms | Allocations: 2011)
+
+
+  [1m[36mUser Load (8.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 20ms (Views: 0.2ms | ActiveRecord: 9.0ms | Allocations: 2377)
+
+
+Started GET "/ratings" for ::1 at 2021-06-28 08:39:55 -0400
+Processing by RatingsController#index as HTML
+Started GET "/auth/verify" for ::1 at 2021-06-28 08:39:55 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mRating Load (5.0ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 12ms (Views: 7.1ms | ActiveRecord: 5.0ms | Allocations: 2760)
+
+
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 0.5ms | Allocations: 1156)
+
+
+Started GET "/ratings" for ::1 at 2021-06-28 08:41:31 -0400
+Processing by RatingsController#index as HTML
+Started GET "/auth/verify" for ::1 at 2021-06-28 08:41:31 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mRating Load (1.4ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 1.4ms | Allocations: 1944)
+
+
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.3ms | Allocations: 2221)
+
+
+Started GET "/ratings" for ::1 at 2021-06-28 08:41:47 -0400
+Processing by RatingsController#index as HTML
+Started GET "/auth/verify" for ::1 at 2021-06-28 08:41:47 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mRating Load (1.1ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 1.1ms | Allocations: 2014)
+
+
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 1.0ms | Allocations: 2221)
+
+
+Started GET "/ratings" for ::1 at 2021-06-28 08:42:01 -0400
+Processing by RatingsController#index as HTML
+Started GET "/auth/verify" for ::1 at 2021-06-28 08:42:01 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mRating Load (0.6ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.6ms | Allocations: 1803)
+
+
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 0.7ms | Allocations: 2304)
+
+
+Started GET "/ratings" for ::1 at 2021-06-28 08:42:11 -0400
+Processing by RatingsController#index as HTML
+Started GET "/auth/verify" for ::1 at 2021-06-28 08:42:11 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mRating Load (0.5ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.6ms | Allocations: 1191)
+
+
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.5ms | Allocations: 2760)
+
+
+Started GET "/ratings" for ::1 at 2021-06-28 08:42:29 -0400
+Processing by RatingsController#index as HTML
+Started GET "/auth/verify" for ::1 at 2021-06-28 08:42:29 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mRating Load (1.6ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 8ms (Views: 5.2ms | ActiveRecord: 1.6ms | Allocations: 1971)
+
+
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 2.7ms | Allocations: 2269)
+
+
+Started GET "/ratings" for ::1 at 2021-06-28 08:43:19 -0400
+Processing by RatingsController#index as HTML
+Started GET "/auth/verify" for ::1 at 2021-06-28 08:43:19 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mRating Load (5.2ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 9ms (Views: 3.3ms | ActiveRecord: 5.2ms | Allocations: 2004)
+
+
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 1.0ms | Allocations: 2222)
+
+
+Started GET "/ratings" for ::1 at 2021-06-28 08:44:37 -0400
+Processing by RatingsController#index as HTML
+Started GET "/auth/verify" for ::1 at 2021-06-28 08:44:37 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mRating Load (1.1ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings"[0m
+  ↳ app/controllers/ratings_controller.rb:9:in `index'
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 1.1ms | Allocations: 2127)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 2268)
+
+

@@ -6,47 +6,30 @@
   justify-content: space-evenly;
 }
 
-textarea {
-  font-size: 48px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+
+.create-input {
+  margin-left: 200px;
 }
 
 
 
 
-.labelName {
-  margin-right: 23px;
-  margin-left: -21px;
-}
 
 .submit-button {
   font-size: 22px;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(8, 184, 184);
-  color: white;
+  background-color:  #fefedf;
   border: none;
   cursor: pointer;
 }
 
-.input-container {
-  margin-left: -22px;
-}
 
-.input-container {
+/* .input-container {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 8px 0;
-}
+} */
 
-.input-container input {
-  width: 75%;
-  padding: 15px;
-}
 
-.input-container label {
-  width: 50%;
-}
+
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
   .input-name {

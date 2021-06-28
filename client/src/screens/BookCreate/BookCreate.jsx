@@ -32,7 +32,7 @@ const BookCreate = (props) => {
   return (<form className="create-form" onSubmit={handleSubmit}>
     <div className="input-container">
     <label>Title:
-      <input
+      <input className="create-input"
         type='text'
         name='title'
         value={book.title}
@@ -41,7 +41,7 @@ const BookCreate = (props) => {
     </div>
     <div className="input-container">
     <label>Author:
-      <input
+      <input className="create-input"
         type='text'
         name='author'
         value={book.author}
@@ -50,7 +50,7 @@ const BookCreate = (props) => {
     </div>
     <div className="input-container">
     <label>Description:
-      <textarea
+      <textarea className="create-input"
         type='text'
         rows={10}
         cols={25}
@@ -61,7 +61,7 @@ const BookCreate = (props) => {
     </div>
     <div className="input-container">
     <label>Image Link:
-      <input
+      <input className="create-input"
         type='text'
         name='img_url'
         value={book.img_url}
@@ -69,7 +69,7 @@ const BookCreate = (props) => {
       </label>
     </div>
     <div className="input-container">
-      <button>Submit</button>
+      <button className ="submit-button">Submit</button>
     </div>
   </form>)
 }
