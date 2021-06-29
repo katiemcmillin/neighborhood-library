@@ -1,0 +1,118 @@
+nav {
+  width: 100%;
+  background-color: #fff6ff;
+}
+
+.nav {
+  display: flex;
+  margin-left: -2px;
+  margin-right: -2px;
+  margin-top: -2px;
+  box-shadow: 1px 1px 15px 1px rgb(200, 200, 200);
+  width: 100%;
+  background-color: #fff6ff;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  text-align: left;
+  transition: 250ms all;
+  margin-left: 30px;
+  padding: 0px;
+  align-items: center;
+}
+
+.logo img {
+  height: 200px;
+  text-align: left;
+}
+
+#add-book-div {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 30px;
+  margin-right: 100px;
+  padding-right: 200px;
+}
+
+.div-links {
+  align-content: right;
+}
+.link {
+  flex: 1;
+}
+#login-link {
+  margin-right: 100px;
+}
+.link-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 100px;
+  padding-right: 20px;
+  font-size: 30px;
+  font-weight: 450;
+}
+p {
+  font-size: 30px;
+}
+p.link-welcome {
+  width: 200px;
+}
+
+#logout:hover {
+  transform: scale(1.025);
+  font-weight: 500;
+  cursor: pointer;
+}
+a {
+  font-weight: 450;
+  font-size: 30px;
+  text-decoration: none;
+  text-align: center;
+  transition: 500ms all;
+}
+
+a:hover {
+  transform: scale(1.025);
+  font-weight: 500;
+}
+#add-book-link {
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 890px) {
+  a, p {
+    font-size: 18px;
+  }
+
+  .logo img {
+    width: 20vh;
+  }
+  .nav {
+    align-items: center;
+  }
+  .links,
+  #add-book-link {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  a, p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  a, p {
+    font-size: 14px;
+  }
+  .link-div {
+    flex-direction: column;
+  }
+}

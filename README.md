@@ -53,75 +53,73 @@ _The **Neighborhood Library** MVP uses full-CRUD (index, show, create, update, d
 #### Wireframes
 
 
-https://github.com/katiemcmillin/neighborhood-library/blob/dev/wireframes/Computer%20screen%20-%20Homepage.png
+![imageAlt](https://github.com/katiemcmillin/neighborhood-library/blob/dev/wireframes/Computer%20screen%20-%20Homepage.png)
 
 - Desktop Landing
 
-https://github.com/katiemcmillin/neighborhood-library/blob/main/wireframes/Computer%20screen%20-%20ShowPage.png
+![imageAlt](https://github.com/katiemcmillin/neighborhood-library/blob/main/wireframes/Computer%20screen%20-%20ShowPage.png)
 
 - Desktop Show
 
-https://github.com/katiemcmillin/neighborhood-library/blob/main/wireframes/Computer%20screen%20-%20Edit.png
+![imageAlt](https://github.com/katiemcmillin/neighborhood-library/blob/main/wireframes/Computer%20screen%20-%20Edit.png)
 
 - Desktop Edit
 
-https://github.com/katiemcmillin/neighborhood-library/blob/main/wireframes/Computer%20screen%20-%20Create.png
-
+![imageAlt](https://github.com/katiemcmillin/neighborhood-library/blob/main/wireframes/Computer%20screen%20-%20Create.png)
 - Desktop Create
 
-https://github.com/katiemcmillin/neighborhood-library/blob/main/wireframes/Computer%20screen%20-%20Register.png
+![imageAlt](https://github.com/katiemcmillin/neighborhood-library/blob/main/wireframes/Computer%20screen%20-%20Register.png)
 
 - Desktop Register
 
-https://github.com/katiemcmillin/neighborhood-library/blob/main/wireframes/Computer%20screen%20-%20LogIn.png
+![imageAlt](https://github.com/katiemcmillin/neighborhood-library/blob/main/wireframes/Computer%20screen%20-%20LogIn.png)
 
 - Desktop Login
 
-https://github.com/katiemcmillin/neighborhood-library/blob/main/wireframes/Tablet%20-%20Homepage.png
+![imageAlt](https://github.com/katiemcmillin/neighborhood-library/blob/main/wireframes/Tablet%20-%20Homepage.png)
 
 - Tablet Landing
 
-https://github.com/katiemcmillin/neighborhood-library/blob/main/wireframes/Tablet%20-%20Showpage.png
+![imageAlt](https://github.com/katiemcmillin/neighborhood-library/blob/main/wireframes/Tablet%20-%20Showpage.png)
 
 - Tablet Show
 
-https://github.com/katiemcmillin/neighborhood-library/blob/main/wireframes/Tablet%20-%20Edit.png
+![imageAlt](https://github.com/katiemcmillin/neighborhood-library/blob/main/wireframes/Tablet%20-%20Edit.png)
 
 - Tablet Edit
 
-https://github.com/katiemcmillin/neighborhood-library/blob/main/wireframes/Tablet%20-%20Create.png
+![imageAlt](https://github.com/katiemcmillin/neighborhood-library/blob/main/wireframes/Tablet%20-%20Create.png)
 
 - Tablet Create
 
-https://github.com/katiemcmillin/neighborhood-library/blob/main/wireframes/Tablet%20-%20Register.png
+![imageAlt](https://github.com/katiemcmillin/neighborhood-library/blob/main/wireframes/Tablet%20-%20Register.png)
 
 - Tablet Register
 
-https://github.com/katiemcmillin/neighborhood-library/blob/main/wireframes/Tablet%20-%20Login.png
+![imageAlt](https://github.com/katiemcmillin/neighborhood-library/blob/main/wireframes/Tablet%20-%20Login.png)
 
 - Tablet Login
 
-https://github.com/katiemcmillin/neighborhood-library/blob/main/wireframes/iPhone%206%2C%207%2C%208%20Plus%20%E2%80%93%20Homepage.png
+![imageAlt](https://github.com/katiemcmillin/neighborhood-library/blob/main/wireframes/iPhone%206%2C%207%2C%208%20Plus%20%E2%80%93%20Homepage.png)
 
 - Mobile Landing
 
-https://github.com/katiemcmillin/neighborhood-library/blob/main/wireframes/iPhone%206%2C%207%2C%208%20Plus%20%E2%80%93%20Showpage.png
-
+![imageAlt](https://github.com/katiemcmillin/neighborhood-library/blob/main/wireframes/iPhone%206%2C%207%2C%208%20Plus%20%E2%80%93%20Showpage.png)
 - Mobile Show
 
-https://github.com/katiemcmillin/neighborhood-library/blob/main/wireframes/iPhone%206%2C%207%2C%208%20Plus%20%E2%80%93%20Edit.png
+![imageAlt](https://github.com/katiemcmillin/neighborhood-library/blob/main/wireframes/iPhone%206%2C%207%2C%208%20Plus%20%E2%80%93%20Edit.png)
 
 - Mobile Edit
 
-https://github.com/katiemcmillin/neighborhood-library/blob/main/wireframes/iPhone%206%2C%207%2C%208%20Plus%20%E2%80%93%20Create.png
+![imageAlt](https://github.com/katiemcmillin/neighborhood-library/blob/main/wireframes/iPhone%206%2C%207%2C%208%20Plus%20%E2%80%93%20Create.png)
 
 - Mobile Create
 
-https://github.com/katiemcmillin/neighborhood-library/blob/main/wireframes/iPhone%206%2C%207%2C%208%20Plus%20%E2%80%93%20Register.png
+![imageAlt](https://github.com/katiemcmillin/neighborhood-library/blob/main/wireframes/iPhone%206%2C%207%2C%208%20Plus%20%E2%80%93%20Register.png)
 
 - Mobile Register
 
-https://github.com/katiemcmillin/neighborhood-library/blob/main/wireframes/iPhone%206%2C%207%2C%208%20Plus%20%E2%80%93%20Login.png
+![imageAlt](https://github.com/katiemcmillin/neighborhood-library/blob/main/wireframes/iPhone%206%2C%207%2C%208%20Plus%20%E2%80%93%20Login.png)
 
 - Mobile Login
 
@@ -129,7 +127,7 @@ https://github.com/katiemcmillin/neighborhood-library/blob/main/wireframes/iPhon
 
 #### Component Tree
 
-https://github.com/katiemcmillin/neighborhood-library/blob/main/component-hierarchy/Component%20hierarchy.png
+![imageAlt](https://github.com/katiemcmillin/neighborhood-library/blob/main/component-hierarchy/Component%20hierarchy.png)
 
 #### Component Architecture
 
@@ -187,7 +185,7 @@ src
 
 #### ERD Model
 
-https://github.com/katiemcmillin/neighborhood-library/blob/dev/erd/ERD.png
+![imageAlt](https://github.com/katiemcmillin/neighborhood-library/blob/dev/erd/ERD.png)
 <br>
 
 ***

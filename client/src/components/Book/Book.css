@@ -1,0 +1,40 @@
+.book-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 20px 0px 20px;
+  transition: 250ms all;
+  padding: 20px;
+}
+
+.book-image {
+  width: 300px;
+  box-shadow: 1px 1px 15px 1px rgb(200, 200, 200);
+}
+
+.book-image:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+
+.book-name {
+  font-size: 25px;
+  padding: 10px;
+}
+
+@media (max-width: 500px) {
+  .book {
+    width: 100%;
+    margin-right: 75px;
+  }
+  .book-image {
+    width: 300px;
+    align-items: center;
+  }
+}
