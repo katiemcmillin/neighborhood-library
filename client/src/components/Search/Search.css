@@ -1,0 +1,32 @@
+.search-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-input {
+  width: 70vw;
+  font-size: 18px;
+  letter-spacing: 0.1px;
+  padding: 12px 20px 12px 40px;
+  box-shadow: 1px 1px 15px 1px rgb(200, 200, 200);
+  border: 1px solid #ddd;
+  margin: 40px;
+}
+
+.search-input::placeholder {
+  letter-spacing: .3px;
+}
+@media (max-width: 800px) {
+  .search-form {
+    padding: 0px;
+  }
+}
+
+@media (max-width: 550px) {
+  .search-label {
+    padding: 0px;
+  }
+  
+}
