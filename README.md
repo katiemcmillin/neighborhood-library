@@ -211,8 +211,6 @@ end
 ```
 ## Code Issues & Resolutions
 
-> Use this section to list of all major issues encountered and their resolution.
-
 - Needed to restructure my code because my api call functions were spread around
 - Ratings functionality was not working
 - Responsive design issues, especially with Book Detail page
