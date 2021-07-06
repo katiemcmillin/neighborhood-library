@@ -2,7 +2,7 @@ import Ratings from "react-ratings-declarative";
 
 export default function AvgRating(props) {
   const { ratings } = props;
-
+//works because JavaScript allows dividing by zero
   const calcAvgRating = () => {
     return (
       ratings.reduce((acc, rating) => {

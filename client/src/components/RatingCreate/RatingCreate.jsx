@@ -1,3 +1,4 @@
+//https://www.npmjs.com/package/react-ratings-declarative
 import Ratings from "react-ratings-declarative";
 
 export default function RatingCreate(props) {
