@@ -1,5 +1,5 @@
 import api from "./api-config";
-
+//Front end API requests
 export const getAllRatings = async () => {
   const resp = await api.get("/ratings");
   return resp.data;
