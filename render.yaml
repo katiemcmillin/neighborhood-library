@@ -2,6 +2,7 @@ databases:
   - name: library_backend
     databaseName: library_backend
     user: katiemcmillin
+    plan: free
 
 services:
   - type: web
