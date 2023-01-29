@@ -21,7 +21,7 @@ gem 'jwt'
 gem 'bootsnap', '>= 1.4.4', require: false
 
 #source 'https://rubygems.org'
-gem 'ddtrace', require: 'ddtrace/auto_instrument'
+#gem 'ddtrace', require: 'ddtrace/auto_instrument'
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-cors'
