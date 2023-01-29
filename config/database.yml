@@ -83,4 +83,4 @@ production:
   <<: *default
   database: neighborhood_library_production
   username: neighborhood_library
-  password: <%= ENV['NEIGHBORHOOD_LIBRARY_DATABASE_PASSWORD'] %>
+  password: <%= ENV['DATABASE_URL'] %>

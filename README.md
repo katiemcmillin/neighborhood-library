@@ -17,6 +17,8 @@
 
 ## Overview
 
+https://neighborhood-library-site.netlify.app
+
 _**Neighborhood Library** is for friends and neighbors to post books they have finished reading and would like to make available to others. It is just like a street library box. It is free to use as long as users follow the guidelines. Users are able to post a book, edit, and delete a book. They may also add ratings._
 
 
@@ -166,15 +168,15 @@ src
 | Finish routes and controllers   |    H     |     3 hrs      |     0 hrs     |    0 hrs    |
 | Setting up front-end file structure | H | 2hrs| 0hrs | 0hrs |
 | Set up initial CSS | H | 1hr| 0hrs | 0hrs |
-| Navbar | H | 1hr| 0hrs | 0hrs |
+| Navbar | H | 1hr| 2hrs | 0hrs |
 | MainContainer.jsx | H | 2hrs| 0hrs | 0hrs |
-| Login | L | 1hr| 0hrs | 0hrs |
-| Register | L | 1hr| 0hrs | 0hrs |
+| Login | L | 1hr| 1hrs | 0hrs |
+| Register | L | 1hr| 1hrs | 0hrs |
 | BooksScreen.jsx  | H | 2hrs| 0hrs | 0hrs |
 | BookDetail.jsx | H | 2hrs| 0hrs | 0hrs |
 | BookCreate.jsx | H | 2hrs| 0hrs | 0hrs |
 | BookEdit.jsx | H | 2hrs| 0hrs | 0hrs |
-| Advanced Styling/CSS | L | 6 hrs| 0hrs | 0hrs |
+| Advanced Styling/CSS | L | 6 hrs| 6hrs | 6hrs |
 | Post MVP | L | 8hrs| 0hrs | 0hrs |
 | Total | H | 41 hrs| 0hrs | 6hrs |
 
@@ -199,8 +201,16 @@ src
 
 ## Code Showcase
 
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+I had an issue deleting books that had ratings attached. I Googled and found a Stack Overflow article that said to add the following code to my model, so that it would destroy ratings that were associated with books.
 
+```
+class Book < ApplicationRecord
+  has_many :ratings, :dependent => :destroy
+  
+end
+```
 ## Code Issues & Resolutions
 
-> Use this section to list of all major issues encountered and their resolution.
+- Needed to restructure my code because my api call functions were spread around
+- Ratings functionality was not working
+- Responsive design issues, especially with Book Detail page

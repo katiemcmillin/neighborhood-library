@@ -6,11 +6,12 @@
   padding-top: 80px;
   align-items: flex-start;
   box-sizing: border-box;
-  width: auto;
+  /* width: auto; */
+  width: 80%;
   height: auto;
   font-size: 14px;
   line-height: 36px;
-  width: 80%;
+  
   top: 40px;
   padding: 18px 20px 18px 20px;
 }
