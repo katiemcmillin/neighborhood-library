@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: neighborhood_library_production
-  username: neighborhood_library
-  password: <%= ENV['DATABASE_URL'] %>
+  url: <%= ENV['DATABASE_URL'] %>
